@@ -1,0 +1,1 @@
+"D:\SoftWares\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-5ggesgtnec3af725 --n quickstartFunctions --r --project "D:\北邮\导论\大作业\final_work" --report_first --report
