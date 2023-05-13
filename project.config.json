@@ -40,7 +40,7 @@
     "minifyWXML": true,
     "condition": false
   },
-  "appid": "wxe47ee9726d592a39",
+  "appid": "wxa17dd15bd0a7b91e",
   "projectname": "quickstart-wx-cloud",
   "libVersion": "2.14.1",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
