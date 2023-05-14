@@ -1,2 +1,12 @@
-<!--pages/homepage/index.wxml-->
-<text>pages/homepage/index.wxml</text>
+
+<view class="container">
+  <text>homepage - used for navigate</text>
+</view>
+
+<view class="container">
+  <view wx:for="{{pageList}}">
+    <button bindtap="jumpPage" data-destinastion="{{itme}}">{{item}}</button>
+    {{index}} : {{item}}
+  </view>
+</view>
+

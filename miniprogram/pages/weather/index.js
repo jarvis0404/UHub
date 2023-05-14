@@ -1,23 +1,11 @@
-// pages/homepage/index.js
+// pages/weather/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    pageList: [
-      "study",
-      "live",
-      "socialize",
-      "focus",
-      "weather"
-    ]
-  },
 
-  jumpPage(e) {
-    wx.navigateTo({
-      url:  `/page/`,
-    })
   },
 
   /**
