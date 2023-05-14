@@ -5,8 +5,7 @@
 
 <view class="container">
   <view wx:for="{{pageList}}">
-    <button bindtap="jumpPage" data-destinastion="{{itme}}">{{item}}</button>
-    {{index}} : {{item}}
+    <button bindtap="jumpPage" data-destination="{{item}}" type="primary">{{item}}</button>
   </view>
 </view>
 

@@ -15,8 +15,10 @@ Page({
   },
 
   jumpPage(e) {
+    console.log("invoke function jumpPage")
+    
     wx.navigateTo({
-      url:  `/page/`,
+      url:  `/pages/${e.target.dataset.destination}/index`,
     })
   },
 
