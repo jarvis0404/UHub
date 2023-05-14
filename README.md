@@ -9,3 +9,4 @@
 ## 参考文档
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+- [开发指南](https://developers.weixin.qq.com/miniprogram/dev/framework/MINA.html)
