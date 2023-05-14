@@ -24,7 +24,7 @@
       </view>
     </view>
   </view>
-
+  <view><button bindtap="my_jumpPage" type="primary">go to homepage</button></view>
   <view class="environment" bindtap="onChangeShowEnvChoose">当前环境 {{ selectedEnv.alias }}</view>
 
   <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>

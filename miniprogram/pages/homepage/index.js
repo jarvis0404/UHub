@@ -1,4 +1,4 @@
-// pages/homepage/homepage.js
+// pages/homepage/index.js
 Page({
 
   /**
