@@ -109,6 +109,12 @@ Page({
     });
   },
 
+  my_jumpPage(e) {
+    wx.navigateTo({
+      url: '/pages/homepage/index',
+    })
+  },
+
   onClickDatabase(powerList) {
     wx.showLoading({
       title: '',
