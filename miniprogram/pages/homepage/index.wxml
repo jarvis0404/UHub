@@ -1,7 +1,7 @@
-
 <view class="container">
   <text>homepage - used for navigate</text>
 </view>
+
 
 <view class="container">
   <view wx:for="{{pageList}}">
