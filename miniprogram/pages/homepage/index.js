@@ -8,15 +8,15 @@ Page({
         path: "weather",
         iconpath: "../../images/weather.svg"
       },{
-        path: "live",
-        iconpath: "../../images/"
+        path: "study",
+        iconpath: "../../images/study.svg"
       }
     ]
   },
 
   jumpPage(e) {
     console.log("invoke function jumpPage")
-    console.log(e.currentTarget)
+    // console.log(e.currentTarget)
     wx.navigateTo({
       url:  `/pages/${e.currentTarget.dataset.destination}/index`,
     })

@@ -1,8 +1,11 @@
 .selector {
   border: solid;
+  border-radius: 5%;
+  border-color: lightseagreen;
   height: 100px;
   position: relative;
   display: flexbox;
+  background-color: lightblue;
 }
 
 .icon {
