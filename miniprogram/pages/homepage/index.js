@@ -1,18 +1,15 @@
-// pages/homepage/index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     pageList: [
       {
         path: "study",
         iconpath: "../../images/box.svg"
-      },
-      {
+      },{
         path: "weather",
         iconpath: "../../images/weather.svg"
+      },{
+        path: "live",
+        iconpath: "../../images/"
       }
     ]
   },
