@@ -6,19 +6,22 @@ Page({
    */
   data: {
     pageList: [
-      "study",
-      "live",
-      "socialize",
-      "focus",
-      "weather"
+      {
+        path: "study",
+        iconpath: "../../images/box.svg"
+      },
+      {
+        path: "weather",
+        iconpath: "../../images/weather.svg"
+      }
     ]
   },
 
   jumpPage(e) {
     console.log("invoke function jumpPage")
-    
+    console.log(e.currentTarget)
     wx.navigateTo({
-      url:  `/pages/${e.target.dataset.destination}/index`,
+      url:  `/pages/${e.currentTarget.dataset.destination}/index`,
     })
   },
 

@@ -1,0 +1,15 @@
+.selector {
+  border: solid;
+  height: 100px;
+  position: relative;
+  display: flexbox;
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+}
+
+.selectorBox {
+  position: relative;
+}

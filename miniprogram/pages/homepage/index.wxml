@@ -1,11 +1,5 @@
-<view class="container">
-  <text>homepage - used for navigate</text>
-</view>
-
-
-<view class="container">
-  <view wx:for="{{pageList}}">
-    <button bindtap="jumpPage" data-destination="{{item}}" type="primary">{{item}}</button>
+<view class='selectorBox'>
+  <view  wx:for="{{pageList}}" class="selector" bindtap="jumpPage" data-destination="{{item.path}}">
+    <image src="{{item.iconpath}}" mode="heightFix" class="icon"/>
   </view>
 </view>
-
