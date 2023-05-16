@@ -3,4 +3,3 @@
     <image src="{{item.iconpath}}" mode="heightFix" class="icon"/>
   </view>
 </view>
-
