@@ -1,5 +1,0 @@
-<view class='selectorBox'>
-  <view  wx:for="{{pageList}}" class="selector" bindtap="jumpPage" data-destination="{{item.path}}">
-    <image src="{{item.iconpath}}" mode="heightFix" class="icon"/>
-  </view>
-</view>

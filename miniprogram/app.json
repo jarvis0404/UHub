@@ -1,29 +1,35 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/getOpenId/index",
-    "pages/getMiniProgramCode/index",
-    "pages/deployService/index",
-    "pages/createCollection/index",
-    "pages/uploadFile/index",
-    "pages/selectRecord/index",
-    "pages/updateRecord/index",
-    "pages/updateRecordResult/index",
-    "pages/updateRecordSuccess/index",
-    "pages/sumRecord/index",
-    "pages/sumRecordResult/index",
-    "pages/homepage/index",
-    "pages/study/index",
-    "pages/live/index",
-    "pages/socialize/index",
-    "pages/focus/index",
-    "pages/weather/index"
+    "pages/home/index",
+    "pages/cloud/index",
+    "pages/login/index"
   ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "home",
+        "iconPath": "./images/home2.png",
+        "selectedIconPath": "./images/home.png"
+      },
+      {
+        "pagePath": "pages/cloud/index",
+        "text": "cloud"
+      },
+      {
+        "pagePath": "pages/login/index",
+        "text": "login"
+      }
+    ]
+  },
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "导论大作业",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
