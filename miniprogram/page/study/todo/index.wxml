@@ -25,6 +25,7 @@
     <view class="empty">
       <text class="title">Congratulations!</text>
       <text class="content">There is no remaining TODOS</text>
+      <text class="content">什么都无法舍弃的人 什么都改变不了</text>
     </view>
   </block>
  <loading hidden="{{loadingHidden}}" bindchange="loadingChange">
@@ -34,4 +35,3 @@
       {{toastText}}
   </toast>
 </view>
-
