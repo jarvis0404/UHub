@@ -1,0 +1,4 @@
+<view class="selector-box">
+  <image src="./images/todo.svg" bindtap="jumpPage"/>
+</view>
+

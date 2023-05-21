@@ -1,0 +1,9 @@
+<!-- primary -->
+<l-card type="primary" 
+        image="https://th.wallhaven.cc/lg/ex/ex9gwo.jpg"
+        title="Levi Ackerman">
+    <!-- 此处为content -->
+    <view class="content">
+    hhhhh
+    </view>
+</l-card>

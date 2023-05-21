@@ -51,6 +51,34 @@
           "pathName": "pages/updateRecordSuccess/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "page/usercenter/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "page/message/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "page/study/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "page/home/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
