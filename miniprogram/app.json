@@ -4,6 +4,9 @@
     "page/message/index",
     "page/usercenter/index",
     "page/study/index",
+    "page/study/todo/index",
+    "page/study/FAQ/index",
+    "page/study/experience/index",
     "page/usercenter/personal-info/index"
   ],
   "tabBar": {

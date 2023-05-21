@@ -1,4 +1,14 @@
-<view class="selector-box">
-  <image src="./images/todo.svg" bindtap="jumpPage"/>
-</view>
 
+<view wx:for="{{pageList}}">
+<l-card type="primary" 
+        image="{{item.image_src}}"
+        title="{{item.title}}"
+        bindtap="jumpPage"
+        data-des = "{{item.des}}"
+        >
+    <!-- 此处为content -->
+    <view class="content">
+      {{item.description}}
+    </view>
+</l-card>
+</view>
