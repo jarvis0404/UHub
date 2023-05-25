@@ -7,6 +7,7 @@
     "page/study/todo/index",
     "page/study/FAQ/index",
     "page/study/experience/index",
+    "page/study/share/index",
     "page/usercenter/personal-info/index"
   ],
   "tabBar": {

@@ -1,5 +1,4 @@
-
-<view wx:for="{{pageList}}">
+<view wx:for="{{pageList}}" wx:key="key">
 <l-card type="primary" 
         image="{{item.image_src}}"
         title="{{item.title}}"
@@ -12,3 +11,4 @@
     </view>
 </l-card>
 </view>
+

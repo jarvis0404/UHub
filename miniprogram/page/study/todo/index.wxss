@@ -1,6 +1,9 @@
+
 .container {
   padding: 20rpx;
   border-top: 1rpx solid #e5e5e5;
+  background-image: url(https://th.wallhaven.cc/small/j8/j8w8xw.jpg);
+  background-repeat: repeat-x;
 }
 
 .header {

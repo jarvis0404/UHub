@@ -1,0 +1,6 @@
+@import '../../../miniprogram_npm/lin-ui/card/index.wxss';
+
+.box {
+  border: solid;
+  border-color: chartreuse;
+}

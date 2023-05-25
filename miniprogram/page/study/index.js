@@ -29,6 +29,13 @@ Page({
         description: "共享智慧，启迪学习，大学生学习经验分享页面，汇聚宝贵经验，相互启发，助你走向学业成功！",
         image_src: "https://img2.baidu.com/it/u=2951375564,2710107034&fm=253&fmt=auto&app=138&f=PNG?w=435&h=436",
         des: 'experience'
+      },
+      {
+        key: 4,
+        title: "资源分享",
+        description: "畅享学习，资源无限。这个页面提供电子资源分享和书籍推荐，帮助大学生们获得更多学习资料，提升成绩",
+        image_src: "https://tse3-mm.cn.bing.net/th/id/OIP-C.KDIdY2N6jOY1JCKefdI1VgHaE8?w=248&h=180&c=7&r=0&o=5&pid=1.7",
+        des: 'share'
       }
     ]
   }

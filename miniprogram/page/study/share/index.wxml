@@ -1,0 +1,10 @@
+<l-card type="primary" 
+          full="{{true}}"
+          image="https://tse3-mm.cn.bing.net/th/id/OIP-C.1am-pD86ufnAOKINr2B5kwHaGl?w=187&h=180&c=7&r=0&o=5&pid=1.7"
+          title="做一个热爱生活的人！"
+          >
+     <view class="content">
+      大雄要死掉了,他对妻子说:我死之后你找一个男人我就在地下打一一个滚。
+      说完就咽气了。某天...
+    </view>
+  </l-card>
