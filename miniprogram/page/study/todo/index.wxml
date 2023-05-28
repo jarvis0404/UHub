@@ -17,7 +17,7 @@
     </view>
     <view class="footer">
       <text class="btn" bindtap="toggleAllHandle">完成所有</text>
-      <text wx:if="{{ leftCount }}">{{ leftCount }} 项{{ leftCount === 1 ? '' : 's' }}未完成</text>
+      <text wx:if="{{ leftCount }}">{{ leftCount }} 项未完成</text>
       <text class="btn" bindtap="clearCompletedHandle">清除已完成</text>
     </view>
   </block>
