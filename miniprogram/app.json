@@ -1,6 +1,9 @@
 {
   "pages": [
     "page/home/index",
+    "page/home/hobby/index",
+    "page/home/sports/index",
+    "page/home/confess/index",
     "page/message/index",
     "page/usercenter/index",
     "page/study/index",
@@ -49,5 +52,9 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "usingComponents": {
+    "content-title": "./components/content-title/index",
+    "content-card": "./components/content-card/index"
+  }
 }

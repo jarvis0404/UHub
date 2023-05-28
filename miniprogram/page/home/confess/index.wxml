@@ -1,0 +1,12 @@
+<content-card class="content" wx:for="{{pagelist}}">
+  <view class="album">
+      <l-avatar class="avatar" size='80' shape="square" src="{{item.avatar}}"/>
+      <view class="right">
+          <view class="name">{{item.nickname}}</view>
+          <view>
+          {{item.contents}}
+          </view>
+          <l-album max-number='{{3}}' urls='{{item.urls}}'  custom-row-number='{{false}}' preview-full-image='{{true}}'></l-album>
+      </view>
+  </view>
+</content-card>
