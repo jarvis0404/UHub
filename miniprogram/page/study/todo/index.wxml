@@ -1,6 +1,6 @@
 <view class="container">
   <view class="header">
-    <input class="new-todo" value="{{ input }}" placeholder="Anything here..." auto-focus bindinput="inputChangeHandle" bindchange="addTodoHandle"/>
+    <input class="new-todo" value="{{ input }}" placeholder="Add anything here..." auto-focus bindinput="inputChangeHandle" bindchange="addTodoHandle"/>
     <button type="primary" size="mini" bindtap="addTodoHandle" loading="{{addOneLoading}}" disabled="{{addOneLoading}}">
         + Add
     </button>
@@ -16,9 +16,9 @@
       </view>
     </view>
     <view class="footer">
-      <text class="btn" bindtap="toggleAllHandle">Toggle all</text>
-      <text wx:if="{{ leftCount }}">{{ leftCount }} item{{ leftCount === 1 ? '' : 's' }} left</text>
-      <text class="btn" bindtap="clearCompletedHandle">Clear completed</text>
+      <text class="btn" bindtap="toggleAllHandle">完成所有</text>
+      <text wx:if="{{ leftCount }}">{{ leftCount }} 项{{ leftCount === 1 ? '' : 's' }}未完成</text>
+      <text class="btn" bindtap="clearCompletedHandle">清除已完成</text>
     </view>
   </block>
   <block wx:else>
