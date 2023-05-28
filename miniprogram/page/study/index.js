@@ -12,7 +12,7 @@ Page({
       {
         key: 1,
         title: "ToDoList",
-        description: "高效有序，全能待办清单页面，包含日计划、周计划、月计划和deadlines，助你轻松提升工作效率",
+        description: "高效有序，全能待办清单页面，助你轻松提升学习和工作效率",
         image_src: "https://img1.baidu.com/it/u=1197037464,3766627062&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500",
         des: 'todo'
       },
