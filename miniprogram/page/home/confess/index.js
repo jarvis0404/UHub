@@ -13,6 +13,7 @@ Page({
       contents: 'xxxxxxxxxxxxxxx'
       },
       {urls: [
+        'https://tvax3.sinaimg.cn/large/008tUvTqly1heekawtuzlj31120kuacv.jpg',
         'https://tvax1.sinaimg.cn/large/008tUvTqgy1heeit6sccxj305k05kweg.jpg',
         'https://tvax1.sinaimg.cn/large/008tUvTqgy1heeit6sccxj305k05kweg.jpg',
         'https://tvax1.sinaimg.cn/large/008tUvTqgy1heeit6sccxj305k05kweg.jpg',
