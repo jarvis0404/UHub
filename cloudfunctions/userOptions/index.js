@@ -31,7 +31,7 @@ exports.main = async (event, context) => {
 
 //删 not ok
 else if(event.option=="delete"){
-  return await db.collection('users').where({
+  return await db.collection('public_data').where({
     //将要删除的值赋给name
     username: event.delname
   }).remove();

@@ -22,7 +22,10 @@
       </view>
     </l-card> -->
         <view class="avter-share-container" wx:if="{{item.is_me}}">
-            <view class="like-container">
+            <view class="published-me">
+                （我发布的）
+            </view>
+            <view class="like-container" bindtap="delete_item" data-index="{{index}}"> 
             <l-icon name="delete" color="#666" size="28" />
             <view class="number">删除</view>
             </view>

@@ -1,5 +1,3 @@
-
-
 Page({
   data: {
         datalist: [],
@@ -52,7 +50,6 @@ Page({
         this.setData({
         account: account
         })
-
       // 加载页面后读取缓存
       wx.cloud.callFunction({
         name: 'userOptions',
@@ -178,11 +175,40 @@ Page({
             wx.showToast({
             title: '读取云数据成功',
             })
-            console.log(res.result.data)
+
+            wx.stopPullDownRefresh()
         },
         fail: (err) => {
             console.log(err)
         }
      })
+  },
+  delete_item(e) {
+    console.log(e.currentTarget.dataset.index)
+
+    var experience_data = wx.getStorageSync('experience_data')
+
+    experience_data.splice(e.currentTarget.dataset.index, 1)
+    // console.log(experience_data)
+    wx.cloud.callFunction({
+        name: 'userOptions',
+        data: {
+          option: 'update',
+          update_page: 'experience',
+          updated_page_data: experience_data
+        },
+        success: res => {
+        console.log('删除数据的结果：', res)
+          wx.showToast({
+            title: '删除成功',
+          })
+        },
+        fail: err => {
+          console.log(err)
+        }
+    })
+
+    // 重新加载页面
+    this.onShow()
   }
 })

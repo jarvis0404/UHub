@@ -1,3 +1,12 @@
+.published-me {
+    display: flex;
+    flex-direction: row;
+    margin-right: 40rpx;
+    align-items: right;
+    font-size: 30rpx;
+    font-family:  'Segoe UI', Tahoma, Verdana, sans-serif, Verdana, sans-serif;
+}
+
 .fixed-box {
     position: fixed;
     bottom: 10%;
@@ -28,7 +37,7 @@
 
 .content-name {
   font-size: 28rpx;
-  font-family: PingFangSC-Regular;
+  font-family:  'Segoe UI', Tahoma, Verdana, sans-serif, Verdana, sans-serif;
   font-weight: 400;
   color: rgba(69, 82, 107, 1);
   line-height: 20px;
@@ -54,17 +63,19 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
+  font-family:  'Segoe UI', Tahoma, Verdana, sans-serif, Verdana, sans-serif;
 }
 
 .avter-content {
   margin-top: 10rpx;
   color: #333;
-  font-size: 28rpx;
+  font-size: 30rpx;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
+  font-family:  'Segoe UI', Tahoma, Verdana, sans-serif, Verdana, sans-serif;
 }
 
 .avter-share-container{
