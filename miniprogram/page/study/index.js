@@ -25,8 +25,8 @@ Page({
       },
       {
         key: 3,
-        title: "经验",
-        description: "共享智慧，启迪学习，大学生学习经验分享页面，汇聚宝贵经验，相互启发，助你走向学业成功！",
+        title: "开发测试页面",
+        description: "页面开发在此，点击查看效果",
         image_src: "https://tvax1.sinaimg.cn/large/008tUvTqly1heebvo3y1mj305k05kq2z.jpg",
         des: 'experience'
       },

@@ -1,61 +1,63 @@
 {
-  "pages": [
-    "page/home/index",
-    "page/home/hobby/index",
-    "page/home/sports/index",
-    "page/home/confess/index",
-    "page/message/index",
-    "page/usercenter/index",
-    "page/study/index",
-    "page/study/todo/index",
-    "page/study/FAQ/index",
-    "page/study/experience/index",
-    "page/study/experience/additem/index",
-    "page/study/share/index",
-    "page/usercenter/personal-info/index"
-  ],
-  "tabBar": {
-    "color": "#000000",
-    "selectedColor": "#000000",
-    "backgroundColor": "#ffffff",
-    "list": [
-      {
-        "pagePath": "page/home/index",
-        "text": "首页",
-        "iconPath": "./images/home2.png",
-        "selectedIconPath": "./images/home.png"
-      },
-      {
-        "pagePath": "page/study/index",
-        "text": "学习",
-        "selectedIconPath": "./images/study.png",
-        "iconPath": "./images/study2.png"
-      },
-      {
-        "pagePath": "page/message/index",
-        "text": "消息",
-        "selectedIconPath": "./images/message.png",
-        "iconPath": "./images/message2.png"
-      },
-      {
-        "pagePath": "page/usercenter/index",
-        "text": "个人中心",
-        "selectedIconPath": "./images/login.png",
-        "iconPath": "./images/login2.png"
-      }
-    ]
-  },
-  "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "导论大作业",
-    "navigationBarTextStyle": "black"
-  },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2",
-  "usingComponents": {
-    "content-title": "./components/content-title/index",
-    "content-card": "./components/content-card/index"
+    "pages": [
+      "page/home/index",
+      "page/home/hobby/index",
+      "page/home/sports/index",
+      "page/home/confess/index",
+      "page/message/index",
+      "page/usercenter/index",
+      "page/study/index",
+      "page/study/todo/index",
+      "page/study/FAQ/index",
+      "page/study/experience/index",
+      "page/study/experience/additem/index",
+      "page/study/share/index",
+      "page/usercenter/login/index",
+      "page/usercenter/register/index"
+    ],
+    "tabBar": {
+      "color": "#000000",
+      "selectedColor": "#000000",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "page/home/index",
+          "text": "首页",
+          "iconPath": "./images/home2.png",
+          "selectedIconPath": "./images/home.png"
+        },
+        {
+          "pagePath": "page/study/index",
+          "text": "学习",
+          "selectedIconPath": "./images/study.png",
+          "iconPath": "./images/study2.png"
+        },
+        {
+          "pagePath": "page/message/index",
+          "text": "消息",
+          "selectedIconPath": "./images/message.png",
+          "iconPath": "./images/message2.png"
+        },
+        {
+          "pagePath": "page/usercenter/index",
+          "text": "个人中心",
+          "selectedIconPath": "./images/login.png",
+          "iconPath": "./images/login2.png"
+        }
+      ]
+    },
+    "window": {
+      "backgroundColor": "#F6F6F6",
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#F6F6F6",
+      "navigationBarTitleText": "导论大作业",
+      "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2",
+    "usingComponents": {
+      "content-title": "./components/content-title/index",
+      "content-card": "./components/content-card/index"
+    }
   }
-}
+  

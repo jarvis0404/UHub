@@ -1,1 +1,38 @@
-/* page/study/experience/additem/index.wxss */
+/* pages/form/pages/image-picker/index.wxss */
+
+.buttun-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    border-radius: 10px;
+  }
+  
+  .add{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .add-icon {
+    height: 70rpx;
+    width: 70rpx;
+    margin-top: 10rpx;
+  }
+  
+  .add-text {
+    margin-top: 6rpx;
+    font-size: 24rpx;
+    font-weight: bold;
+    color: #bfbfbf;
+  }
+  
+  .top{
+    margin-top: 20rpx;
+  }

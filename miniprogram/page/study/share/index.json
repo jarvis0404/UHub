@@ -1,10 +1,10 @@
 {
-  "usingComponents": {
-    "l-card": "../../../miniprogram_npm/lin-ui/card/index",
-    "l-tag": "../../../miniprogram_npm/lin-ui/tag/index",
-    "l-icon": "../../../miniprogram_npm/lin-ui/icon/index",
-    "l-album": "../../../miniprogram_npm/lin-ui/album/index",
-    "l-avatar": "../../../miniprogram_npm/lin-ui/avatar/index"
-  },
+    "usingComponents": {
+        "l-card": "../../../dist/card/index",
+        "l-tag": "../../../dist/tag/index",
+        "l-icon": "../../../dist/icon/index",
+        "l-album": "../../../dist/album/index",
+        "l-avatar": "../../../dist/avatar/index"
+      },
   "navigationBarTitleText": "Share"
 }

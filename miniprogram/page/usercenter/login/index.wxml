@@ -1,0 +1,36 @@
+<content-card
+      class="content"
+      name="输入账号密码"
+    >
+      <view class='buttun-wrapper'>
+        <l-input
+          placeholder="请输入账号"
+          width="750"
+          show-row="{{ false }}"
+          width="600"
+          l-class='input-phone'
+          label-width="120"
+          clear="{{true}}"
+          bind:lininput="add_account"
+        >
+        <l-icon class='input-icon' slot="left" name="user"/>
+        </l-input>
+      </view>
+
+      <view class='buttun-wrapper'>
+        <l-input
+          placeholder="请输入密码"
+          width="750"
+          show-row="{{ false }}"
+          width="600"
+          l-class='input-phone'
+          label-width="120"
+          clear="{{true}}"
+          bind:lininput="add_password"
+        >
+        <l-icon class='input-icon' slot="left" name="password"/>
+        </l-input>
+      </view>
+</content-card>
+<view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
+<button bindtap="login">登录</button>

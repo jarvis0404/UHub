@@ -1,7 +1,7 @@
 {
   "usingComponents": {
-    "l-album": "../../../miniprogram_npm/lin-ui/album/index",
-    "l-avatar": "../../../miniprogram_npm/lin-ui/avatar/index",
-    "l-card": "../../../miniprogram_npm/lin-ui/card/index"
+    "l-album": "../../../dist/album/index",
+    "l-avatar": "../../../dist/avatar/index",
+    "l-card": "../../../dist/card/index"
   }
 }

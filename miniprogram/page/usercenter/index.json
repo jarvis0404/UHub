@@ -1,8 +1,5 @@
 {
   "usingComponents": {
-    "l-button": "../../miniprogram_npm/lin-ui/button",
-    "l-avatar": "../../miniprogram_npm/lin-ui/avatar",
-    "l-grid": "../../miniprogram_npm/lin-ui/grid/index",
-    "l-grid-item": "../../miniprogram_npm/lin-ui/grid-item"
+
   }
 }
