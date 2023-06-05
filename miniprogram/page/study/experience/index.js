@@ -1,13 +1,19 @@
 
 
-
 Page({
   data: {
         datalist: [],
         envId: '',
-        page: 'experience'
+        page: 'experience',
+        account: {}
   },
   onShow() {
+        // 读取缓存账号数据
+        var account  = wx.getStorageSync('account')
+        this.setData({
+        account: account
+        })
+
       // 加载页面后读取缓存
       wx.cloud.callFunction({
         name: 'userOptions',
@@ -19,11 +25,16 @@ Page({
             console.log('调用get获得的页面数据：', res.result.data[0].pagedata);
             var datalist = res.result.data[0].pagedata
             wx.setStorageSync('experience_data', res.result.data[0].pagedata);
-            console.log('right now page datalist from cloud:', datalist)
-            if (datalist) {
-              this.setData({
-                datalist: datalist
-              })
+
+            for (var i = 0; i < datalist.length; ++i)
+            {
+                    if (datalist[i].publisher == account.account)
+                        datalist[i].is_me = true
+            }
+                if (datalist) {
+                this.setData({
+                    datalist: datalist,
+                })
             }
             wx.showToast({
             title: '读取云数据成功',
@@ -36,6 +47,12 @@ Page({
      })
   },
   onLoad: function() {
+        // 读取缓存账号数据
+        var account  = wx.getStorageSync('account')
+        this.setData({
+        account: account
+        })
+
       // 加载页面后读取缓存
       wx.cloud.callFunction({
         name: 'userOptions',
@@ -47,11 +64,16 @@ Page({
             console.log('调用get获得的页面数据：', res.result.data[0].pagedata);
             var datalist = res.result.data[0].pagedata
             wx.setStorageSync('experience_data', res.result.data[0].pagedata);
-            console.log('right now page datalist from cloud:', datalist)
-            if (datalist) {
-              this.setData({
-                datalist: datalist
-              })
+
+            for (var i = 0; i < datalist.length; ++i)
+            {
+                    if (datalist[i].publisher == account.account)
+                        datalist[i].is_me = true
+            }
+                if (datalist) {
+                this.setData({
+                    datalist: datalist,
+                })
             }
             wx.showToast({
             title: '读取云数据成功',
@@ -125,7 +147,14 @@ Page({
   },
   onPullDownRefresh() {
     // 刷新页面后重新读取云端数据
-    wx.cloud.callFunction({
+        // 读取缓存账号数据
+        var account  = wx.getStorageSync('account')
+        this.setData({
+        account: account
+        })
+
+      // 加载页面后读取缓存
+      wx.cloud.callFunction({
         name: 'userOptions',
         data: {
             option: 'get',
@@ -135,20 +164,25 @@ Page({
             console.log('调用get获得的页面数据：', res.result.data[0].pagedata);
             var datalist = res.result.data[0].pagedata
             wx.setStorageSync('experience_data', res.result.data[0].pagedata);
-            console.log('right now page datalist from cloud:', datalist)
-            if (datalist) {
+
+            for (var i = 0; i < datalist.length; ++i)
+            {
+                    if (datalist[i].publisher == account.account)
+                        datalist[i].is_me = true
+            }
+                if (datalist) {
                 this.setData({
-                datalist: datalist
+                    datalist: datalist,
                 })
             }
             wx.showToast({
-            title: '刷新数据成功',
+            title: '读取云数据成功',
             })
             console.log(res.result.data)
         },
         fail: (err) => {
             console.log(err)
         }
-        })
+     })
   }
 })

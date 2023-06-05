@@ -1,5 +1,4 @@
 <view wx:for="{{datalist}}" wx:key="update_time">
-
     <l-card type="avatar" l-class="card" image="{{item.avatar}}"
     title="{{item.nickname}}" describe="{{item.update_time}}">
       <view class="avter-content">
@@ -20,8 +19,14 @@
           <l-icon name="comment" color="#666" size="28" />
           <view class="number">{{item.comments}}评论</view>
         </view>
-      </view> -->
-
+      </view>
+    </l-card> -->
+        <view class="avter-share-container" wx:if="{{item.is_me}}">
+            <view class="like-container">
+            <l-icon name="delete" color="#666" size="28" />
+            <view class="number">删除</view>
+            </view>
+        </view>
     </l-card>
     <view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
 </view>

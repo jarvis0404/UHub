@@ -13,16 +13,16 @@ Page({
     var time = new Date().toJSON().substring(0, 10) + ' ' + new Date().toTimeString().substring(0,8);
     var account = wx.getStorageSync('account')
     console.log('lqh: account info:', account)
+
+    // 向数据库添加的数据
     experience_data.push({
-        // likes: 0,
-        // liked: false,
-        // comments: 0,
         nickname: account.nickname,
         content: this.data.content,
         update_time: time,
         avatar: account.avatar,
         urls: this.data.urls,
-        // title: this.data.title
+        publisher: account.account,
+        is_me: false
     });
     // console.log('experience_data:', experience_data)
     
