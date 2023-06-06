@@ -15,18 +15,20 @@ exports.main = async (event, context) => {
 
  //增 ok
   if(event.option=='add'){
-    console.log(event)
-    return await db.collection('public_data').add({
-      // 花括号里面是你要添加的对象
-      data: {
-        page: event.page,
-        pagedata: event.pagedata,
-        operator: '李庆浩',
-        _id: event.page
-      },
-      //可添加多条或一条
-      //event:包含传过来的所有数据的一个对象
-  });
+    return {
+        event: event,
+        cloud_add: await db.collection('public_data').add({
+            // 花括号里面是你要添加的对象
+            data: {
+              page: event.page,
+              pagedata: event.pagedata,
+              operator: '李庆浩',
+              _id: event.page
+            },
+            //可添加多条或一条
+            //event:包含传过来的所有数据的一个对象
+            })
+    }
 }
 
 //删 not ok
@@ -50,13 +52,16 @@ else if(event.option=="get"){
 
 //改
 else if(event.option=="update"){
-  return await db.collection('public_data').where({
-       page: event.update_page
-  }).update({
-    data:{
-      pagedata: event.updated_page_data
+  return {
+    event: event,
+    update_res:  await db.collection('public_data').where({
+    page: event.update_page
+    }).update({
+        data:{
+        pagedata: event.updated_page_data
     }
-  })
+    })
+  }
 }
 }
 

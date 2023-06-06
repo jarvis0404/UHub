@@ -1,3 +1,6 @@
+
+
+
 // page/study/experience/additem/index.js
 Page({
   data: {
@@ -11,6 +14,7 @@ Page({
   handin: function() {
     var experience_data = wx.getStorageSync('experience_data')
     var time = new Date().toJSON().substring(0, 10) + ' ' + new Date().toTimeString().substring(0,8);
+
     var account = wx.getStorageSync('account')
     console.log('lqh: account info:', account)
 
@@ -26,7 +30,9 @@ Page({
     });
     // console.log('experience_data:', experience_data)
     
-    // updata ok!!
+    console.log('上传前的urls', this.data.urls)
+
+    // 问题应该出现在云函数
     wx.cloud.callFunction({
         name: 'userOptions',
         data: {
@@ -34,11 +40,11 @@ Page({
           update_page: 'experience',
           updated_page_data: experience_data
         },
-        success: res => {
-        console.log('更新数据的结果：',res)
-          wx.showToast({
+        success: (res) => {
+        console.log('更新数据的结果：',res.result.event);
+        wx.showToast({
             title: '数据添加成功',
-          })
+        })
         },
         fail: err => {
           console.log(err)
@@ -47,7 +53,7 @@ Page({
 
     wx.navigateBack({
         delta: 1
-    });
+      });
   },
   addtitle(e) {
     console.log(e.detail.value)
@@ -67,25 +73,41 @@ Page({
         content: e.detail.value
     })
   },
-  upload_image: function(e) {
-    console.log('upload image...');
-    console.log('上传的图片数量：', e.detail.all.length)
+  upload_image(e) {
+    // console.log('upload image...');
+    // console.log('上传的图片数量：', e.detail.all.length)
+    var cnt = e.detail.all.length
+    
+    // 解决异步问题！！
+    // 带上mask！
+    wx.showLoading({
+      title: '上传图片中...',
+      mask: true
+    })
 
     // write a loop to upload images
     for (var i = 0; i<e.detail.all.length; ++i)
     {
+        // 解决同时上传文件命名可能相同的问题！！
+        // 在time stamp后加上index
+        // 多个用户同时上传可能出错
         wx.cloud.uploadFile({
             filePath: e.detail.all[i],
-            cloudPath: `images/experience/${new Date().getTime()}.png`,
-          }).then(res => {
-              // console.log(res.fileID)
-              var urls = this.data.urls;
-              urls.push(res.fileID);
-              // console.log('okay')
-              this.setData({
-                  urls: urls
-              })
-          })
+            cloudPath: `images/experience/${new Date().getTime()}${i}.png`,
+            success: (res) => {
+                // console.log('success 中的fileID',res.fileID)
+                var urls = this.data.urls;
+                urls.push(res.fileID);
+                // console.log('okay' + i)
+                this.setData({
+                    urls: urls
+                })
+                cnt--;
+                if (cnt == 0) {
+                    wx.hideLoading();
+                }
+            }
+        })
     }
-  },
+  }
 })

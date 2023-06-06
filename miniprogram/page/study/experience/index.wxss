@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     margin-right: 40rpx;
-    align-items: right;
     font-size: 30rpx;
     font-family:  'Segoe UI', Tahoma, Verdana, sans-serif, Verdana, sans-serif;
 }
