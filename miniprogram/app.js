@@ -5,11 +5,10 @@ App({
         env: 'cloud-1gockrq93404066e',
         traceUser: true
     })
-
+    
     // 检查更新
     versionUtil.checkUpdate();
   },
-
   globalData: {
   }
 });

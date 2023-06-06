@@ -4,7 +4,10 @@
         "l-tag": "../../../dist/tag/index",
         "l-icon": "../../../dist/icon/index",
         "l-album": "../../../dist/album/index",
-        "l-avatar": "../../../dist/avatar/index"
+        "l-avatar": "../../../dist/avatar/index",
+        "l-collapse": "../../../dist/collapse/index",
+        "l-collapse-item": "../../../dist/collapse-item/index",
+        "l-button": "/dist/button/index"
       },
   "navigationBarTitleText": "Experience",
   "enablePullDownRefresh": true,

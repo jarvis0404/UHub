@@ -44,7 +44,7 @@ else if(event.option=="get"){
   return await db.collection('public_data').where({
     page: event.page
   }).get({
-    success:function(res){
+    success:function(res) {
       return res
     }
   })
@@ -55,7 +55,7 @@ else if(event.option=="update"){
   return {
     event: event,
     update_res:  await db.collection('public_data').where({
-    page: event.update_page
+        page: event.update_page
     }).update({
         data:{
         pagedata: event.updated_page_data

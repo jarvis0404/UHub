@@ -65,6 +65,13 @@ Page({
         })
     },
     upload_avatar: function(e) {
+        
+        // 解决异步问题！！
+        // 带上mask！
+        wx.showLoading({
+            title: '上传图片中...',
+            mask: true
+        })
         wx.cloud.uploadFile({
             filePath: e.detail.all[0],
             cloudPath: `users/avatar/${new Date().getTime()}.png`,
@@ -75,6 +82,7 @@ Page({
             this.setData({
                 avatar: res.fileID
             })
+            wx.hideLoading();
         })
     }
 })

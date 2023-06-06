@@ -1,0 +1,5 @@
+<l-collapse>
+        <l-collapse-item title="Lin UI">
+          Lin UI 是基于微信小程序原生语法实现的组件库。遵循简洁，易用的设计规范。
+        </l-collapse-item>
+</l-collapse>

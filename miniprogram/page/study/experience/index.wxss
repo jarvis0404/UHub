@@ -1,3 +1,8 @@
+.comment-detail-container{
+    display: flex;
+    align-items: center;
+}
+
 .published-me {
     display: flex;
     flex-direction: row;
@@ -103,4 +108,50 @@
         display: flex;
         justify-content: center; /*水平方向的居中*/
         /* border: 1px solid grey; */
+}
+
+/*  */
+.ticket-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px #eee dotted;
+    border-radius: 20rpx;
+}
+
+.ticket-container-bottom{
+    border-top: 1px #eee dashed;
+    /* padding: 6rpx 30rpx; */
+}
+
+.ticket-container-bottom .title{
+    width: 100%;
+    font-size: 22rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.ticket-container-bottom text{
+    font-size: 30rpx;
+    color: #999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.l-title-class{
+    padding-left: 0rpx !important;
+    padding-right: 0rpx !important;
+}
+
+.l-body-class{
+    padding-left: 0 !important;
+}
+
+.ticket-detail-container{
+    display: flex;
+    align-items: center;
+    font-size: 32rpx;
+}
+
+.ticket-detail-container l-icon{
+    margin-left: 6rpx;
 }
