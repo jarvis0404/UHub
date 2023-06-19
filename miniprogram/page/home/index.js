@@ -36,6 +36,13 @@ Page({
             description: "todolist",
             image_src: "https://img1.baidu.com/it/u=1197037464,3766627062&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500",
             des: 'todo'
+          },
+          {
+            key: 5,
+            title: "weather",
+            description: "weather",
+            image_src: "https://img1.baidu.com/it/u=1197037464,3766627062&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500",
+            des: 'weather'
           }
         ]
       }
