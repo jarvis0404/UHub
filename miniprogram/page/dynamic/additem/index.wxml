@@ -41,4 +41,4 @@
 </content-card>
 <view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
 
-<button bindtap="handin">提交</button>
+<button bindtap="confirm">提交</button>

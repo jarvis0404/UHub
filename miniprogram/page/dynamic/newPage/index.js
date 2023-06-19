@@ -4,7 +4,8 @@ Page({
         pageData: {},
         index: 0,
         liked: false,
-        is_me: false
+        is_me: false,
+        comment_is_me: []
     },
     onLoad: function (option) {
         let page_data = JSON.parse(option.page_data)
@@ -23,34 +24,50 @@ Page({
         })
     },
     handin() {
-        var cloud_pagedata = wx.getStorageSync('dynamic')
-        var account = wx.getStorageSync('account')
-        var i = this.data.index
-        // [account.nickname, account.avatar, this.data.comment]
-        var time = new Date().toJSON().substring(0, 10) + ' ' + new Date().toTimeString().substring(0,8);
+        wx.showModal({
+            title: '确定发布了吗？',
+            cancelText: '我再想想',
+            complete: (res) => {
+                if (res.cancel) {
+                    wx.showToast({
+                      title: '已取消',
+                      icon: 'none'
+                    })
+                }
 
-        cloud_pagedata[i].comments.push([account.nickname, account.avatar, time,this.data.comment])
+                if (res.confirm) {
+                    var cloud_pagedata = wx.getStorageSync('dynamic')
+                    var account = wx.getStorageSync('account')
+                    var i = this.data.index
+                    // [account.nickname, account.avatar, this.data.comment]
+                    var time = new Date().toJSON().substring(0, 10) + ' ' + new Date().toTimeString().substring(0, 8);
 
-        console.log(cloud_pagedata[i])
+                    cloud_pagedata[i].comments.push([account.nickname, account.avatar, time, this.data.comment])
 
-        wx.cloud.callFunction({
-            name: 'userOptions',
-            data: {
-                option: 'update',
-                update_page: 'dynamic',
-                updated_page_data: cloud_pagedata
-            },
-            success: (res) => {
-                console.log('更新数据的结果：', res.result.event);
-                wx.showToast({
-                    title: '评论成功~',
-                })
-                this.onShow();
-            },
-            fail: err => {
-                console.log(err)
+                    console.log(cloud_pagedata[i])
+
+                    wx.cloud.callFunction({
+                        name: 'userOptions',
+                        data: {
+                            option: 'update',
+                            update_page: 'dynamic',
+                            updated_page_data: cloud_pagedata
+                        },
+                        success: (res) => {
+                            console.log('更新数据的结果：', res.result.event);
+                            wx.showToast({
+                                title: '评论成功~',
+                            })
+                            this.onShow();
+                        },
+                        fail: err => {
+                            console.log(err)
+                        }
+                    })
+                }
             }
         })
+
     },
     onPullDownRefresh() {
         this.get_cloudPagedata()
@@ -139,4 +156,47 @@ Page({
             }
         })
     },
+    delete_item(e) {
+        var index = this.data.index
+
+        wx.showModal({
+            title: '确定删除吗？',
+            success(res) {
+                if (res.confirm) {
+                    console.log('用户点击确定')
+                    wx.showLoading({
+                        title: '删除中...',
+                        mask: true
+                    })
+                    // console.log(e.currentTarget.dataset.index)
+                    var page_data = wx.getStorageSync('dynamic')
+
+                    page_data.splice(e.currentTarget.dataset.index, 1)
+                    // console.log(experience_data)
+                    wx.cloud.callFunction({
+                        name: 'userOptions',
+                        data: {
+                            option: 'update',
+                            update_page: 'dynamic',
+                            updated_page_data: page_data
+                        },
+                        success: res => {
+                            console.log('删除数据的结果：', res)
+                            wx.hideLoading();
+                            wx.navigateBack();
+                        },
+                        fail: err => {
+                            console.log(err)
+                        }
+                    })
+                } else if (res.cancel) {
+                    console.log('用户点击取消')
+                    wx.showToast({
+                        title: '已取消',
+                        icon: "none"
+                    })
+                }
+            }
+        })
+    }
 })

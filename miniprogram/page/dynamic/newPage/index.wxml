@@ -1,7 +1,8 @@
-<!-- 只是展示 -->
-
-
+<!-- 展示 -->
 <l-card type="avatar" l-class="card" image="{{pageData.avatar}}" title="{{pageData.nickname}}" describe="{{pageData.update_time}}">
+    <!-- 撤回投稿 -->
+    <l-tag shape="circle" bg-color="#ffffff" font-color="#fa8072" slot="more" size="large" bindtap="delete_item" wx:if="{{is_me}}">撤回投稿</l-tag>
+
     <!-- 文本 -->
     <view class="avter-content">
         {{pageData.content}}
@@ -31,11 +32,11 @@
 <content-card class="content" name="来发表友善的评论吧~">
     <view class='buttun-wrapper'>
         <l-textarea auto-height="{{true}}" placeholder="{{comment}}" bind:lininput="change_content" auto-height="{{true}}" maxlength="200" border="{{false}}" />
-        <view class="hand-in" >
+        <view class="hand-in">
             <view style="height: 30px; line-height: 30px;" bindtap="handin" class="hand-in-item">
                 发表
             </view>
-            <image src="https://tvax3.sinaimg.cn/large/008tUvTqly1hf3akqwek0j305k05k0ss.jpg" bindtap="handin" class="hand-in-item"/>
+            <image src="https://tvax3.sinaimg.cn/large/008tUvTqly1hf3akqwek0j305k05k0ss.jpg" bindtap="handin" class="hand-in-item" />
         </view>
     </view>
 </content-card>
@@ -45,6 +46,7 @@
     <l-card type="avatar" l-class="card" image="{{item[1]}}" title="{{item[0]}}" describe="{{item[2]}}" full>
         <!-- 撤回投稿 -->
         <l-tag shape="circle" bg-color="#ffffff" font-color="#000" slot="more" size="medium">{{index+1}}楼</l-tag>
+
         <!-- 文本 -->
         <view class="avter-content">
             {{item[3]}}

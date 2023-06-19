@@ -38,7 +38,7 @@
         </view>
     </l-card>
 </view>
-
+ 
 <!-- 底线 -->
 <l-loadmore show="{{true}}" 
           type="end"

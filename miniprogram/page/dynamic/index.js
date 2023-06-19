@@ -129,29 +129,46 @@ Page({
         this.get_cloud_data();
     },
     delete_item(e) {
-        console.log(e.currentTarget.dataset.index)
-        var page_data = wx.getStorageSync('dynamic')
+        let that = this
+        wx.showModal({
+            title: '确定删除吗？',
+            content: '删除之后无法再次获得哦~',
+            success(res) {
+                if (res.confirm) {
+                    console.log('用户点击确定')
+                    console.log(e.currentTarget.dataset.index)
+                    var page_data = wx.getStorageSync('dynamic')
 
-        page_data.splice(e.currentTarget.dataset.index, 1)
-        // console.log(experience_data)
-        wx.cloud.callFunction({
-            name: 'userOptions',
-            data: {
-                option: 'update',
-                update_page: 'dynamic',
-                updated_page_data: page_data
-            },
-            success: res => {
-                console.log('删除数据的结果：', res)
-                wx.showToast({
-                    title: '删除成功',
-                })
-                this.onShow();
-            },
-            fail: err => {
-                console.log(err)
+                    page_data.splice(e.currentTarget.dataset.index, 1)
+                    // console.log(experience_data)
+                    wx.cloud.callFunction({
+                        name: 'userOptions',
+                        data: {
+                            option: 'update',
+                            update_page: 'dynamic',
+                            updated_page_data: page_data
+                        },
+                        success: res => {
+                            console.log('删除数据的结果：', res)
+                            wx.showToast({
+                                title: '删除成功',
+                            })
+                            that.onShow();
+                        },
+                        fail: err => {
+                            console.log(err)
+                        }
+                    })
+                } else if (res.cancel) {
+                    console.log('用户点击取消')
+                    wx.showToast({
+                      title: '已取消',
+                      icon: "none"
+                    })
+                }
             }
         })
+
 
     },
     get_cloudPagedata() {
