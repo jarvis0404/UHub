@@ -1,0 +1,48 @@
+<!-- 投稿按钮 -->
+<view class="fixed-box" bindtap="to_additem">
+    <image src="https://tvax4.sinaimg.cn/large/008tUvTqly1hf3cuux129j305k05kt92.jpg" class="fixed-box-icon" />
+</view>
+
+<view wx:for="{{datalist}}" wx:key="update_time">
+    <l-card type="avatar" l-class="card" image="{{item.avatar}}" title="{{item.nickname}}" describe="{{item.update_time}}">
+        <!-- 撤回投稿 -->
+        <l-tag shape="circle" bg-color="#f3f3f3" font-color="#EE0000" slot="more" size="large" wx:if="{{item.is_me}}" bindtap="delete_item">撤回投稿</l-tag>
+
+        <!-- 文本 -->
+        <view class="avter-content" bindtap="newPage" data-index="{{index}}">
+            {{item.content}}
+        </view>
+
+        <!-- 图片 -->
+        <view class="image-box">
+            <l-album max-number='{{9}}' urls='{{item.urls}}' custom-row-number='{{false}}' preview-full-image='{{true}}'></l-album>
+        </view>
+
+        <!-- 喜欢和评论 -->
+        <view class="avter-share-container">
+            <!-- 已经点赞 -->
+            <view class="like-container" bindtap="addLike" data-index="{{index}}" wx:if="{{item.liked}}">
+                <l-icon name="like" color="#FF0000" size="30" />
+                <view class="number">{{item.liked_users.length}}</view>
+            </view>
+            <!-- 未点赞 -->
+            <view class="like-container" bindtap="addLike" data-index="{{index}}" wx:if="{{!item.liked}}">
+                <l-icon name="like" color="#666" size="30" />
+                <view class="number">{{item.liked_users.length}}</view>
+            </view>
+
+            <view class="like-container" bindtap="newPage" data-index="{{index}}">
+                <l-icon name="comment" color="#666" size="30" />
+                <view class="number">{{item.comments.length}}</view>
+            </view>
+        </view>
+    </l-card>
+</view>
+
+<!-- 底线 -->
+<l-loadmore show="{{true}}" 
+          type="end"
+          size="28" 
+          line="{{true}}"
+          >
+</l-loadmore>

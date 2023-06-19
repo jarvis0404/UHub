@@ -29,6 +29,13 @@ Page({
             description: "汇聚运动爱好者，分享经验、组织活动，挑战极限，激发激情，让运动成为校园生活的一部分。加入我们，追逐梦想，释放能量！",
             image_src: "https://tvax4.sinaimg.cn/large/008tUvTqgy1heeit6sccxj305k05kweg.jpg",
             des: 'sports'
+          },
+          {
+            key: 4,
+            title: "todo",
+            description: "todolist",
+            image_src: "https://img1.baidu.com/it/u=1197037464,3766627062&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500",
+            des: 'todo'
           }
         ]
       }

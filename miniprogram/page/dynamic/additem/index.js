@@ -12,23 +12,23 @@ Page({
     title: ''
   },
   handin: function() {
-    var experience_data = wx.getStorageSync('experience_data')
+    var pagedata = wx.getStorageSync('dynamic')
     var time = new Date().toJSON().substring(0, 10) + ' ' + new Date().toTimeString().substring(0,8);
 
     var account = wx.getStorageSync('account')
-    console.log('lqh: account info:', account)
+    // console.log('lqh: account info:', account)
 
     // 向数据库添加的数据
-    experience_data.push({
+    pagedata.push({
         nickname: account.nickname,
         content: this.data.content,
         update_time: time,
         avatar: account.avatar,
         urls: this.data.urls,
         publisher: account.account,
-        is_me: false
+        comments: [],
+        liked_users: []
     });
-    // console.log('experience_data:', experience_data)
     
     console.log('上传前的urls', this.data.urls)
 
@@ -37,8 +37,8 @@ Page({
         name: 'userOptions',
         data: {
           option: 'update',
-          update_page: 'experience',
-          updated_page_data: experience_data
+          update_page: 'dynamic',
+          updated_page_data: pagedata
         },
         success: (res) => {
         console.log('更新数据的结果：',res.result.event);
@@ -76,8 +76,11 @@ Page({
   upload_image(e) {
     // console.log('upload image...');
     // console.log('上传的图片数量：', e.detail.all.length)
-    var cnt = e.detail.all.length
-    
+    // 应该是current!!
+    var cnt = e.detail.current.length
+    // console.log('eee',e)
+    var account = wx.getStorageSync('account')
+
     // 解决异步问题！！
     // 带上mask！
     wx.showLoading({
@@ -86,14 +89,14 @@ Page({
     })
 
     // write a loop to upload images
-    for (var i = 0; i<e.detail.all.length; ++i)
+    for (var i = 0; i<e.detail.current.length; ++i)
     {
         // 解决同时上传文件命名可能相同的问题！！
         // 在time stamp后加上index
         // 多个用户同时上传可能出错
         wx.cloud.uploadFile({
-            filePath: e.detail.all[i],
-            cloudPath: `images/experience/${new Date().getTime()}${i}.png`,
+            filePath: e.detail.current[i],
+            cloudPath: `images/dynamic/${account.account}${new Date().getTime()}${i}.png`,
             success: (res) => {
                 // console.log('success 中的fileID',res.fileID)
                 var urls = this.data.urls;

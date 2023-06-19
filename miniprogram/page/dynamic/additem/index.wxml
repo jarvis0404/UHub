@@ -30,20 +30,14 @@
 </content-card> -->
 
 <view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
-<content-card
-      class="content"
-      name="在此输入文本">
-      <view class='buttun-wrapper'>
-        <l-textarea auto-height="{{true}}" placeholder="输入你想说的"
-        bind:lininput="change_content" maxlength="200"/>
-      </view>
+<content-card class="content" name="在此输入文本">
+    <view class='buttun-wrapper'>
+        <l-textarea auto-height="{{true}}" placeholder="输入你想说的" bind:lininput="change_content" maxlength="500" />
+    </view>
 </content-card>
 <view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
-<content-card
-      class="content"
-      name="最多上传9张图片"
-    >
-    <l-image-picker urls="" bind:linchange='upload_image' count="9"/>
+<content-card class="content" name="最多上传9张图片">
+    <l-image-picker urls="" bind:linchange='upload_image' count="9" />
 </content-card>
 <view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
 

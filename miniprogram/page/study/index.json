@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "l-card": "../../dist/card/index",
-    "l-loadmore": "../../dist/loadmore/index"
-  },
-  "navigationBarTitleText": "学无止境"
-}

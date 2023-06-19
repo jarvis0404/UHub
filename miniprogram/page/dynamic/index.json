@@ -5,11 +5,10 @@
         "l-icon": "../../../dist/icon/index",
         "l-album": "../../../dist/album/index",
         "l-avatar": "../../../dist/avatar/index",
-        "l-collapse": "../../../dist/collapse/index",
-        "l-collapse-item": "../../../dist/collapse-item/index",
-        "l-button": "/dist/button/index"
+        "l-button": "/dist/button/index",
+        "l-loadmore": "../../dist/loadmore/index"
       },
-  "navigationBarTitleText": "Experience",
+  "navigationBarTitleText": "校园动态",
   "enablePullDownRefresh": true,
   "backgroundTextStyle": "dark" 
 }

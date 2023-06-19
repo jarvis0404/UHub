@@ -4,14 +4,11 @@
       "page/home/hobby/index",
       "page/home/sports/index",
       "page/home/confess/index",
-      "page/message/index",
+      "page/home/todo/index",
+      "page/dynamic/index",
+      "page/dynamic/newPage/index",
+      "page/dynamic/additem/index",
       "page/usercenter/index",
-      "page/study/index",
-      "page/study/todo/index",
-      "page/study/FAQ/index",
-      "page/study/experience/index",
-      "page/study/experience/additem/index",
-      "page/study/share/index",
       "page/usercenter/login/index",
       "page/usercenter/register/index"
     ],
@@ -27,16 +24,10 @@
           "selectedIconPath": "./images/home.png"
         },
         {
-          "pagePath": "page/study/index",
-          "text": "学习",
-          "selectedIconPath": "./images/study.png",
-          "iconPath": "./images/study2.png"
-        },
-        {
-          "pagePath": "page/message/index",
-          "text": "消息",
-          "selectedIconPath": "./images/message.png",
-          "iconPath": "./images/message2.png"
+          "pagePath": "page/dynamic/index",
+          "text": "动态",
+          "selectedIconPath": "./images/dynamic.png",
+          "iconPath": "./images/dynamic2.png"
         },
         {
           "pagePath": "page/usercenter/index",

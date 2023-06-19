@@ -27,6 +27,7 @@ Page({
 
               // bug: 只能设置一次缓存数据
               wx.setStorageSync('account', this.data)
+              wx.navigateBack();
             },
             fail: (err) => {
               // console.log('注册失败提示信息:', err.errCode)
