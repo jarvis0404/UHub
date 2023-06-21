@@ -1,34 +1,50 @@
 {
-    "description": "项目配置json文件",
-    "miniprogramRoot": "miniprogram/",
-    "cloudfunctionRoot": "cloudfunctions/",
-    "appid": "wxe47ee9726d592a39",
-    "compileType": "miniprogram",
-    "libVersion": "2.32.0",
-    "packOptions": {
-        "ignore": [],
-        "include": []
-    },
-    "setting": {
-        "coverView": true,
-        "es6": true,
-        "postcss": true,
-        "minified": true,
-        "enhance": true,
-        "showShadowRootInWxmlPanel": true,
-        "packNpmRelationList": [],
-        "babelSetting": {
-            "ignore": [],
-            "disablePlugins": [],
-            "outputPath": ""
-        },
-        "condition": false,
-        "ignoreUploadUnusedFiles": false
-    },
-    "condition": {},
-    "editorSetting": {
-        "tabIndent": "insertSpaces",
-        "tabSize": 4
-    },
-    "srcMiniprogramRoot": "miniprogram/"
+  "description": "项目配置json文件",
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "appid": "wxe47ee9726d592a39",
+  "compileType": "miniprogram",
+  "libVersion": "2.32.0",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "enableEngineNative": false,
+  "useIsolateContext": true,
+  "userConfirmedBundleSwitch": false,
+  "packNpmManually": false,
+  "packNpmRelationList": [],
+  "minifyWXSS": true,
+  "disableUseStrict": false,
+  "showES6CompileOption": false,
+  "useCompilerPlugins": false,
+  "minifyWXML": true,
+  "condition": false,
+  "ignoreUploadUnusedFiles": false
+},
+"appid": "wxe47ee9726d592a39",
+"projectname": "quickstart-wx-cloud",
+"libVersion": "2.14.1",
+"cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+"condition": {
+  "miniprogram": {
+    "list": [
+      {
+        "name": "db guide",
+        "pathName": "pages/databaseGuide/databaseGuide",
+        "query": ""
+      }
+    ]
+  }
+},
+"srcMiniprogramRoot": "miniprogram/",
+"compileType": "miniprogram",
+"packOptions": {
+  "ignore": [],
+  "include": []
+},
+"editorSetting": {
+  "tabIndent": "insertSpaces",
+  "tabSize": 2
+}
 }
