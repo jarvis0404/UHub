@@ -1,0 +1,2 @@
+<l-input style="position: relative; left: 0rpx; top: 36rpx" label="昵称"  placeholder="请输入新的昵称" bind:lininput='change_nickname' />
+<l-button bindtap="nickname_change"shape="semicircle"plain="{{true}}"size="medium"  style="position: relative; left: 286rpx; top: 113rpx">保存</l-button>

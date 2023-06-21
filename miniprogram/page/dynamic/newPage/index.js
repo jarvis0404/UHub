@@ -24,14 +24,21 @@ Page({
         })
     },
     handin() {
+        if (!wx.getStorageSync('account')) {
+            wx.showToast({
+                title: '评论请先登录~',
+                icon: 'error'
+            })
+            return
+        }
         wx.showModal({
             title: '确定发布了吗？',
             cancelText: '我再想想',
             complete: (res) => {
                 if (res.cancel) {
                     wx.showToast({
-                      title: '已取消',
-                      icon: 'none'
+                        title: '已取消',
+                        icon: 'none'
                     })
                 }
 
@@ -114,10 +121,19 @@ Page({
         })
     },
     addLike: function (e) {
-        var i = this.data.index
-
-        var cloud_pagedata = wx.getStorageSync('dynamic')
         var account = wx.getStorageSync('account')
+        console.log('account on storage:', account)
+        if (!account) {
+            wx.showToast({
+                title: '点赞请先登录~',
+                icon: 'error'
+            })
+
+            return
+        }
+
+        var i = this.data.index
+        var cloud_pagedata = wx.getStorageSync('dynamic')
 
         if (this.data.liked == false) {
             cloud_pagedata[i].liked_users.push(account.account);

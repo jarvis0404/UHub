@@ -1,25 +1,32 @@
-<view wx:for="{{pageList}}" wx:key="key">
-  <view class="card-top">
-    <view class="card-dot"></view>
-    <view class="content-name">{{item.title}}</view>
-  </view>
-  <l-card type="primary" 
-          image="{{item.image_src}}"
-          title="{{item.title}}"
-          bindtap="jumpPage"
-          data-des = "{{item.des}}"
-          l-class="card"
-          >
-      <!-- 此处为content -->
-      <view class="content">
-        {{item.description}}
-      </view>
-  </l-card>
+<view class="swiperContainer">
+    <swiper class="imageContainer" bindchange="swiperChange" previous-margin="55rpx" next-margin="50rpx" circular autoplay>
+        <block wx:for="{{ImgUrls}}" wx:key="index">
+            <swiper-item class="turnItem">
+                <image class="itemImg {{index == swiperCurrent ? 'imgActive': ''}}" src="{{item}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <!-- 指示点的修饰 -->
+    <view class="dots">
+        <block wx:for="{{turnImg}}" wx:key="index">
+            <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+        </block>
+    </view>
 </view>
 
-<l-loadmore show="{{true}}" 
-          type="end"
-          size="28" 
-          line="{{true}}"
-          >
+
+<view wx:for="{{pageList}}" wx:key="key">
+    <view class="card-top">
+        <view class="card-dot"></view>
+        <view class="content-name">{{item.title}}</view>
+    </view>
+    <l-card type="primary" image="{{item.image_src}}" title="{{item.title}}" bindtap="jumpPage" data-des="{{item.des}}" l-class="card">
+        <!-- 此处为content -->
+        <view class="content">
+            {{item.description}}
+        </view>
+    </l-card>
+</view>
+
+<l-loadmore show="{{true}}" type="end" size="28" line="{{true}}">
 </l-loadmore>

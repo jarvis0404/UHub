@@ -1,0 +1,18 @@
+{
+    "usingComponents": {
+      "content-title": "/components/content-title/index",
+      "content-card": "/components/content-card/index",
+      "l-image-picker": "/dist/image-picker/index",
+      "l-button": "/dist/button/index",
+      "l-toast": "/dist/toast/index",
+      "l-textarea": "/dist/textarea/index",
+      "l-icon": "/dist/icon/index",
+      "l-input": "/dist/input/index",
+      "l-album": "/dist/album/index",
+      "l-image-clipper": "/dist/image-clipper/index",
+      "l-image-clipper-tools": "/dist/image-clipper-tools/index",
+      "l-radio-group": "/dist/radio-group/index",
+      "l-radio": "/dist/radio/index"
+    }
+    
+  }

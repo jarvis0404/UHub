@@ -1,0 +1,77 @@
+<content-card
+      class="content"
+      name="设置性别"
+    >
+      <view class='buttun-wrapper'>
+        <l-radio-group l-class="l-radio-group" length="2" bind:linchange="choose_sex" placement="row">
+            <l-radio 
+            l-class="l-radio"
+            wx:for="{{Sex}}"
+            wx:key="id"
+            key="{{item.id}}"
+            placement="left">
+            {{item.name}}
+            </l-radio>
+        </l-radio-group>
+      </view>
+</content-card>
+<content-card
+      class="content"
+      name="设置生日"
+    >
+      <view class='buttun-wrapper'>
+        <l-input
+          placeholder="请输入您的生日"
+          width="750"
+          show-row="{{ false }}"
+          width="600"
+          l-class='input-phone'
+          label-width="120"
+          clear="{{true}}"
+          bind:lininput="add_birthday"
+        >
+        <l-icon class='input-icon' slot="left" name="time"/>
+        </l-input>
+      </view>
+</content-card>
+<content-card
+      class="content"
+      name="设置电话号码"
+    >
+      <view class='buttun-wrapper'>
+        <l-input
+          placeholder="请输入您的电话号码"
+          width="750"
+          show-row="{{ false }}"
+          width="600"
+          l-class='input-phone'
+          label-width="120"
+          clear="{{true}}"
+          bind:lininput="add_phone"
+        >
+        <l-icon class='input-icon' slot="left" name="phone"/>
+        </l-input>
+      </view>
+</content-card>
+<content-card
+      class="content"
+      name="设置家乡"
+    >
+      <view class='buttun-wrapper'>
+        <l-input
+          placeholder="请输入您的家乡"
+          width="750"
+          show-row="{{ false }}"
+          width="600"
+          l-class='input-phone'
+          label-width="120"
+          clear="{{true}}"
+          bind:lininput="add_hometown"
+        >
+        <l-icon class='input-icon' slot="left" name="address"/>
+        </l-input>
+      </view>
+</content-card>
+<l-button bindtap="update"shape="semicircle"plain="{{true}}"size="medium"   style="position: relative; left: 286rpx; top: 16rpx">上传</l-button>
+
+

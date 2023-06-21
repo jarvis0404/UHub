@@ -1,0 +1,8 @@
+<view class="container">
+    <image class="img" src="https://tvax4.sinaimg.cn/large/008tUvTqgy1hf646m5mxyj30b40b4wej.jpg"/>
+</view>
+<view class="t1">请选择反馈类型</view>
+<view>
+    <l-list l-class="list" title="功能异常" gap="20" bind:lintap="jumpPage" data-des="error" desc="请向开发者反馈小程序功能异常问题。" l-desc-class="desc"/>
+    <l-list  l-class="list" title="产品建议" gap="20" bind:lintap="jumpPage" data-des="suggestion" desc="请向开发者反馈你对产品的相关建议。"/>
+</view>

@@ -1,75 +1,105 @@
 .card-dot {
-  width: 18rpx;
-  height: 18rpx;
-  border-radius: 50%;
-  border: 6rpx solid #3963bc;
-  margin-left: 26rpx;
+    width: 18rpx;
+    height: 18rpx;
+    border-radius: 50%;
+    border: 6rpx solid #383838;
+    margin-left: 26rpx;
 }
 
 .card-top {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 750rpx;
-  height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    width: 750rpx;
+    height: 100rpx;
 }
 
 .content-name {
-  font-size: 28rpx;
-  font-family: PingFangSC-Regular;
-  font-weight: 400;
-  color: rgba(69, 82, 107, 1);
-  line-height: 20px;
-  margin-left: 8px;
+    font-size: 28rpx;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(69, 82, 107, 1);
+    line-height: 20px;
+    margin-left: 8px;
+    font-weight: bold;
 }
 
 .card {
-  margin: 10rpx auto !important;
+    margin: 10rpx auto !important;
 }
 
 .right-card {
-  height: 180rpx !important;
-  width: 220rpx !important;
-  border-radius: 12rpx !important;
+    height: 180rpx !important;
+    width: 220rpx !important;
+    border-radius: 12rpx !important;
 }
 
 .content {
-  margin-top: 10rpx;
-  color: #666;
-  font-size: 26rpx;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
+    margin-top: 10rpx;
+    color: black;
+    font-weight: bold;
+    font-size: 26rpx;
+    overflow: hidden;
+    font-family: PingFangSC-Regular, consolas, 'Segoe UI';
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
 }
 
-.avter-content {
-  margin-top: 10rpx;
-  color: #333;
-  font-size: 26rpx;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
+.swiperContainer {
+    margin-top: 15rpx;
+    bottom: 8rpx;
+    position: relative;
 }
 
-.avter-share-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+.imageContainer {
+    width: 100%;
+    margin-top: 10rpx;
+    height: 350rpx;
 }
 
-.like-container{
-  display: flex;
-  flex-direction: row;
-  margin-left: 40rpx;
-  align-items: center
+.turnItem {
+    height: 340rpx;
 }
 
-.number{
-  color: #666;
-  font-size: 24rpx;
-  margin-left: 12rpx;
+.itemImg {
+    position: absolute;
+    width: 99%;
+    height: 300rpx;
+    margin-top: 20rpx;
+    border-radius: 15rpx;
+}
+
+.imgActive {
+    opacity: 1;
+    height: 340rpx;
+    margin-top: 0rpx;
+    transition: all .2s ease-in 0s;
+}
+
+/* 指示点修饰 */
+.dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25rpx;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    margin: 0 8rpx;
+    width: 18rpx;
+    height: 18rpx;
+    background-color: white;
+    border-radius: 8rpx;
+    transition: all .5s;
+}
+
+.dot.active {
+    width: 24rpx;
+    background: #fad81e;
 }

@@ -1,0 +1,11 @@
+{
+    "usingComponents": {
+        "l-avatar":"/dist/avatar/index",
+        "l-list":"/dist/list/index",
+        "l-image-picker": "/dist/image-picker/index",
+        "l-collapse": "/dist/collapse/index",
+        "l-collapse-item": "/dist/collapse-item/index",
+        "l-switch": "/dist/switch/index"
+    }
+    
+}

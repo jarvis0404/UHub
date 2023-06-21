@@ -1,0 +1,12 @@
+.list {
+    margin-bottom: auto !important;
+    border-bottom-color: rgb(226, 225, 225) !important;
+}
+.l-title-class {
+    padding-left: 0rpx !important;
+    padding-right: 0rpx !important;
+}
+
+.l-body-class {
+    padding-left: 0 !important;
+}

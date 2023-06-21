@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "l-avatar": "/dist/avatar/index",
+        "l-tag": "/dist/tag/index",
+        "l-button": "/dist/button/index",
+        "l-list": "/dist/list/index"
+    },
+    "navigationBarTitleText": "用户中心",
+    "navigationBarBackgroundColor": "#71c0e9"
+}

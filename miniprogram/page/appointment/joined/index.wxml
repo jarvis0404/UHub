@@ -1,0 +1,23 @@
+<view wx:for="{{lst}}">
+    <view class="box">
+        <view style="font-weight: bold;margin-left: 10px;">成员（{{1 + item.members.length}}/{{item.sum}}）</view>
+        <view class="members-box">
+            <view class="members-item">
+                <l-avatar text="{{item.nickname}}" placement="bottom" src="{{item.avatar}}" />
+            </view>
+            <view wx:for="{{item.members}}" wx:for-item='item2'>
+                <view class="members-item">
+                    <l-avatar text="{{item2.nickname}}" placement="bottom" src="{{item2.avatar}}" />
+                </view>
+            </view>
+        </view>
+        <l-card type="avatar" l-class="card" image="{{item.avatar}}" describe="{{item.time}}">
+            <!-- 文本 -->
+            <view class="avter-content">
+                <view style="font-weight: 600; font-size: 15px;"> {{item.description}}</view>
+            </view>
+        </l-card>
+    </view>
+
+
+</view>

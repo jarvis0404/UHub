@@ -1,4 +1,23 @@
-
-
-<button bindtap="jumpPage" data-des="register">注册</button>
-<button bindtap="jumpPage" data-des="login">登录</button>
+<view>
+    <view wx:if="{{isshow}}">
+        <view class="my-button" style="color: black;" bindtap="jumpPage" data-des="register" hover-class="hover">注册</view>
+        <view class="my-button" style="color: black;" bindtap="jumpPage" data-des="login" hover-class="hover">登录</view >
+    </view>
+    <view wx:else >
+        <view class="container" bindtap="jumpPage" data-des="userinfo">
+            <l-avatar style="position: relative; left: 20rpx;top: 5rpx" src="{{account.avatar}}"/>
+            <text style="position: relative; left: 50rpx; top: -65rpx; color:white;">{{account.nickname}}</text>
+        </view>
+        <view class="lists">
+            <l-list l-class="list" icon-size="40" title="用户规范" icon="order" left-gap="20"
+            bind:lintap="jumpPage" data-des="order"/>
+            <l-list l-class="list" icon-size="40" title="帮助中心" icon="help" left-gap="20"
+             bind:lintap="jumpPage" data-des="help"/>
+            <l-list l-class="list" icon-size="40" title="关于我们" icon="warning"     left-gap="20"bind:lintap="jumpPage" data-des="about"/>
+            <l-list l-class="list" icon-size="40" title="意见反馈"icon="notification" left-gap="20"
+            bind:lintap="jumpPage" data-des="response"/>
+            <l-list l-class="list" icon-size="40" title="分享" icon="share" left-gap="20"
+            bind:lintap="jumpPage" data-des="share"/>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,146 @@
+<view class="container">
+  <view class="title">邮hub小黑屋</view>
+  <view class="subtitle">邮hub校友圈社区规范</view>
+  <view class="update-time">更新时间：2023年6月20日</view>
+  <view class="subtitle">请仔细阅读，违反规范将被封禁！</view>
+  <view class="content">
+    邮hub校友圈致力于为用户提供一个温暖、可信、友善、和谐的线上社区。为了维护社区秩序，保持良好氛围，邮hub团队将依据本规范中的条款对使用邮hub校友圈的用户和发布与邮hub校友圈上的内容进行管理。在收到用户举报或巡查发现违规行为时，邮hub团队将会根据对社区氛围破坏的程度，使用删除发布内容、暂停用户部分权限乃至终止用户使用邮hub校友圈的权利等措施进行管理。
+  </view>
+  <view>
+  <image style="width: 750rpx; height: 1079rpx; display: inline-block; box-sizing: border-box" src="https://tvax4.sinaimg.cn/large/3eab28f2ly1hf54wamjc1j20hs0qoacj.jpg" mode=""/>
+  </view>
+  <view class="text">
+    <text class="section-title">1. 违反法律法规</text>
+    <text class="subsection-title">1.1反对宪法所确定的基本原则</text>
+    <text>...</text>
+    <text class="subsection-title">1.2危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一</text>
+    <text>...</text>
+    <text class="subsection-title">1.3损害国家荣誉和利益</text>
+    <text>...</text>
+    <text class="subsection-title">1.4煽动民族仇恨、民族歧视，破坏民族团结</text>
+    <text>...</text>
+    <text class="subsection-title">1.5侮辱、滥用英烈形象，否定英烈事迹，美化粉饰侵略战争行为的</text>
+    <text>...</text>
+    <text class="subsection-title">1.6破坏国家宗教政策，宣扬邪教和封建迷信</text>
+    <text>...</text>
+    <text class="subsection-title">1.7散布谣言，扰乱社会秩序，破坏社会稳定</text>
+    <text>...</text>
+    <text class="subsection-title">1.8宣扬淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪</text>
+    <text>...</text>
+    <text class="subsection-title">1.9煽动非法集会、结社、游行、示威、聚众扰乱社会秩序</text>
+    <text>...</text>
+    <text class="subsection-title">1.10泄露他人隐私，侵害他人的肖像权、姓名权或其他权益</text>
+    <text>...</text>
+    <text class="subsection-title">1.10.1捏造事实或身份，诽谤他人，产生恶劣影响</text>
+    <text>...</text>
+    <text class="subsection-title">1.11捏造、攻击、讽、戏谑、传播历任及现任党和国家领导人相关敏感信息</text>
+    <text>...</text>
+    <text class="subsection-title">1.12出租、出售、求购、传播翻墙相关软件或信息</text>
+    <text>...</text>
+    <text class="subsection-title">1.13发布含有法律、行政法规禁止的其他内容的信息</text>
+    <text>...</text>
+    <text class="subsection-title">1.14发布上级监管部门禁止的危害平台安全的信息</text>
+    <text>...</text>
+  </view>
+  <view class="text">
+    <text class="section-title">2.违反校规</text>
+    <text class="subsection-title">2.1发布出租或求租床位、校园卡、学生证、校内账号等信息</text>
+    <text>...</text>
+    <text class="subsection-title">2.2发布征集或者提供代跑、代课、代考、代写作业、代签到等作弊信息</text>
+    <text>...</text>
+    <text class="subsection-title">2.3盗用学校或学校部门、校内组织名义从事活动</text>
+    <text>...</text>
+    <text class="subsection-title">2.4其他通过校友圈组织、参与、宣扬的违反校规的行为</text>
+    <text>...</text>
+  </view>
+  <view class="text">
+    <text class="section-title">3.违反发帖要求</text>
+    <text class="subsection-title">3.1发布帖子时未按照该分类的发帖要求提供必要信息</text>
+    <text>...</text>
+    <text class="subsection-title">3.2发布求助类帖子时违反自查要求</text>
+    <text>...</text>
+    <text class="subsection-title">3.2.1发布常见求助内容，但并未声明已善用搜索及发帖理由</text>
+    <text>...</text>
+    <text class="subsection-title">3.3发布闲置类帖子时违反自查要求</text>
+    <text>...</text>
+    <text class="subsection-title">3.3.1发布的闲置价格高于原购入价格3.3.2发布的闲置价格高于在其他平台的挂价3.3.3发布不符合国家相关法律和社区规定类别的闲置3.3.4发布闲置时将书籍资料、美妆护肤、鞋服包饰等展示受限分类混入其他分类</text>
+    <text>...</text>
+    <text class="subsection-title">3.4发布寻人类帖子时未说明来意或侵犯他人隐私</text>
+    <text>...</text>
+    <text class="subsection-title">3.5拼单、拼车、游戏、自习、旅游、电影、聚餐或其他涉及组队的活动未发布在攒局版块中</text>
+    <text>...</text>
+    <text class="subsection-title">3.6发布帖子时错误分类或回避展示受限的分类</text>
+    <text>...</text>
+    <text class="subsection-title">3.7七天之内以同一账号、不同账号或跟帖等任意形式重复发布帖子(寻物招领类除外) </text>
+    <text>...</text>
+    <text class="subsection-title">3.8宠物领养只允许无偿领养，禁止商家机构或个人进行宠物销售行为</text>
+    <text>...</text>
+  </view>
+  <view class="text">
+    <text class="section-title">4.不友善的行为</text>
+    <text class="subsection-title">4.1轻蔑:贬低、轻视他人及其劳动成果</text>
+    <text>...</text>
+    <text class="subsection-title">4.2诽谤:捏造、散布虚假事实，损害他人名誉</text>
+    <text>...</text>
+    <text class="subsection-title">4.3嘲讽:以比喻、夸张、侮辱性的文字或图像，戏谑调侃他人，令人产生不适</text>
+    <text>...</text>
+    <text class="subsection-title">4.4挑衅:以不友好的方式激怒他人，意图使对方对自己的言论作出回应，蓄意制造事端</text>
+    <text>...</text>
+    <text class="subsection-title">4.4.1无根据地臆测他人的发言或行事动机，恶意引战</text>
+    <text>...</text>
+    <text class="subsection-title">4.5羞辱:贬低他人的能力、行为、生理或身份特征，让对方难堪</text>
+    <text>...</text>
+    <text class="subsection-title">4.6谩骂:以不文明的语言攻击他人或实体</text>
+    <text>...</text>
+    <text class="subsection-title">4.7歧视:针对他人的民族、种族、宗教、性取向、性别、年龄、地域、生理特征、疾病、专业等身份或者归类的攻击</text>
+    <text>...</text>
+    <text class="subsection-title">4.8威胁:许诺以不良的后果来迫使他人服从自己的意志</text>
+    <text>...</text>
+    <text class="subsection-title">4.9欺诈:通过编造身份或事实，谋取利益、引发混乱或哗众取宠</text>
+    <text>...</text>
+    <text class="subsection-title">4.10剧透:在热门作品上映或播出期间，故意剧透</text>
+    <text>...</text>
+  </view>
+  <view class="text">
+    <text class="section-title">5发布垃圾信息、广告信息</text>
+    <text class="subsection-title">5.1以商家、机构、微商、代理、代购、中介、黄牛、个体户、兼职、自由职业者等任何商业身份发布牟利或推广信息</text>
+    <text>...</text>
+    <text class="subsection-title">3.2发布求助类帖子时违反自查要求</text>
+    <text>...</text>
+    <text class="subsection-title">5.2以所谓出售或出租闲置为名义的牟利行为</text>
+    <text>...</text>
+    <text class="subsection-title">5.2.1出售可轻易免费领取的物品、票卡或资格</text>
+    <text>...</text>
+    <text class="subsection-title">    5.2.2批量出售家庭农产品5.2.3批量出售自制手工艺品或服务5.2.4盈利性质的出租行为</text>
+    <text>...</text>
+    <text class="subsection-title">5.3有组织地以软文发布售卖产品、提供服务、宣传推广等内容的垃圾广告</text>
+    <text>...</text>
+    <text class="subsection-title">5.3.1以消费者或用户等身份发布的软文钓鱼帖</text>
+    <text>...</text>
+    <text class="subsection-title">5.4发布诱导用户点击、分享、点赞、集赞、评论、跳转、关注的引流营销内容</text>
+    <text>...</text>
+    <text class="subsection-title">5.5发布含有返利内容的推广链接、二维码等内容，返利范围包括金钱、积分、资格等</text>
+    <text>...</text>
+    <text class="subsection-title">5.6发布非校内相关的活动信息</text>
+    <text>...</text>
+    <text class="subsection-title">5.7通过快速发帖、回帖、发布无意义图文等行为干扰社区秩序和用户体验</text>
+    <text>...</text>
+  </view>
+  <view class="text">
+    <text class="section-title">6发布色情低俗信息</text>
+    <text class="subsection-title">6.1发布、索取、传播漏点图、性行为、性交易等相关色情图文、视频、网址等信息</text>
+    <text>...</text>
+    <text class="subsection-title">6.2发布约炮或相关性暗示等违规交友内容</text>
+    <text>...</text>
+    <text class="subsection-title">6.2.1非匿名状态下表达交友、恋爱等需求或倾向，但无明确要求和足够信息，视作性暗示处理</text>
+    <text>...</text>
+    <text class="subsection-title">6.2.2描述约炮、性虐待、性交易等经历或经验，视作性暗示处理</text>
+    <text>...</text>
+    <text class="subsection-title">6.3发布细致描绘性行为或露骨自拍的内容</text>
+    <text>...</text>
+    <text class="subsection-title">6.4发布血腥、恶俗、恐怖、自残等</text>
+    <text>...</text>
+  </view>
+</view>
+<view style="width: 319rpx; height: 263rpx; display: block; box-sizing: border-box; position: relative; left: 29rpx; top: -7275rpx"><image style="width: 118rpx; height: 120rpx; display: inline-block; box-sizing: border-box; position: relative; left: 0rpx; top: 129rpx" src="https://tvax2.sinaimg.cn/large/3eab28f2ly1hf54zz2lfzj20sg0sgwgh.jpg" mode=""/></view>
+<view style="position: relative; left: 111rpx; top: -214rpx"><image style="width: 455rpx; height: 354rpx; display: inline-block; box-sizing: border-box; position: relative; left: 0rpx; top: 0rpx" src="https://tvax2.sinaimg.cn/large/3eab28f2ly1hf555e8s94g20a4084jtw.gif" mode=""/></view>

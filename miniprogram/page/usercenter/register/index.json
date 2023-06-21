@@ -10,6 +10,7 @@
       "l-input": "/dist/input/index",
       "l-album": "/dist/album/index",
       "l-image-clipper": "/dist/image-clipper/index",
-      "l-image-clipper-tools": "/dist/image-clipper-tools/index"
+      "l-image-clipper-tools": "/dist/image-clipper-tools/index",
+      "l-card": "/dist/card/index"
     }
   }

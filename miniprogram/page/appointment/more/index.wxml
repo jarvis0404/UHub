@@ -1,0 +1,22 @@
+<view class="box">
+    <view style="font-weight: bold;margin-left: 10px;">成员（{{1 + pagedata.members.length}}/{{pagedata.sum}}）</view>
+    <view class="members-box">
+        <view class="members-item">
+            <l-avatar text="{{pagedata.nickname}}" placement="bottom" src="{{pagedata.avatar}}" />
+        </view>
+        <view wx:for="{{pagedata.members}}">
+            <view class="members-item">
+            <l-avatar text="{{item.nickname}}" placement="bottom" src="{{item.avatar}}" />
+        </view>
+        </view>
+    </view>
+</view>
+
+<l-card type="avatar" l-class="card" image="{{pagedata.avatar}}" describe="{{pagedata.update_time}}">
+    <!-- 文本 -->
+    <view class="avter-content">
+        <view style="font-weight: 600; font-size: 15px;"> {{pagedata.text}}</view>
+    </view>
+</l-card>
+
+<view class="my-button" bindtap="join" style="background-color: #fd6a61;" hover-class="hover">我也想去</view>

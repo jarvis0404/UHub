@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "l-album": "../../../dist/album/index",
-    "l-avatar": "../../../dist/avatar/index",
-    "l-card": "../../../dist/card/index"
-  }
-}

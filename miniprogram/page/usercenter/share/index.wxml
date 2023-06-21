@@ -1,0 +1,3 @@
+<button open-type="share" class="b1"></button>
+
+<button bindtap="back" class="b2"></button>

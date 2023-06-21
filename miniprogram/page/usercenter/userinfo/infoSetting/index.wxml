@@ -1,0 +1,26 @@
+<view>
+    <l-list l-class="list" title="头像" gap="20" bind:lintap="avatar_change" >
+        <view slot="right-section">
+            <l-avatar src="{{avatar}}" style="position: relative; left: -33rpx; top: 1rpx"></l-avatar>
+        </view>
+    </l-list>
+    <l-list l-class="list" title="昵称" gap="20" bind:lintap="jumpPage" data-des="nickname">
+        <view slot="right-section" style="position: relative; left: -33rpx;">
+            {{nickname}}
+        </view>
+    </l-list>
+    <l-list l-class="list" title="个性签名" gap="20" bind:lintap="jumpPage" data-des="motto">
+        <view slot="right-section" style="position: relative; left: -33rpx;">
+            {{motto}}
+        </view>
+    </l-list>
+    <l-list l-class="list" title="其他信息" gap="20" bind:lintap="jumpPage" data-des="others">
+        <view slot="right-section" style="position: relative; left: -33rpx;">
+        </view>
+    </l-list>
+    <l-list l-class="list" title="是否在个人页面展示个人信息" gap="20" >
+        <view slot="right-section" >
+            <l-switch checked="{{ customValue }}" active-value="{{ 1 }}" inactive-value="{{ 0 }}" bind:linchange="onChange"/>
+        </view>
+    </l-list>
+</view>

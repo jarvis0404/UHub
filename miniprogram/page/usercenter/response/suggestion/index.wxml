@@ -1,0 +1,12 @@
+<content-card class="content" name="产品建议">
+    <view>
+        <l-textarea placeholder="请说说您宝贵的建议" bind:lininput='description' />
+    </view>
+</content-card>
+
+<view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
+<content-card class="content" name="请上传你的截图">
+    <l-image-picker bind:linchange='upload_screenshot' count="1" />
+</content-card>
+<view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
+<button bindtap="upload">上传</button>

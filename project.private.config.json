@@ -16,8 +16,8 @@
                     "scene": null
                 },
                 {
-                    "name": "经验页面",
-                    "pathName": "page/study/experience/index",
+                    "name": "login",
+                    "pathName": "page/usercenter/index",
                     "query": "",
                     "launchMode": "default",
                     "scene": null
@@ -30,8 +30,8 @@
                     "scene": null
                 },
                 {
-                    "name": "",
-                    "pathName": "page/message/index",
+                    "name": "appointment",
+                    "pathName": "page/appointment/index",
                     "query": "",
                     "launchMode": "default",
                     "scene": null

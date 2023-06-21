@@ -1,0 +1,31 @@
+<view style="font-weight: bold;">活动主题</view>
+<view class="grid-container">
+    <view wx:for="{{grids}}">
+        <view class='{{item.is_selected}}' bindtap="select" hover-class="hover" data-index="{{index}}">{{item.text}}</view>
+    </view>
+</view>
+
+<view style="font-weight: bold;">活动名称（唯一）</view>
+<input type="text" placeholder="请输入名称" bindinput="name" class='name' />
+
+<view style="font-weight: bold;">活动详情</view>
+<view class='detail'>
+    <textarea placeholder="在此输入活动详情，如时间、地点和活动内容，禁止以任何形式拉群或宣传群聊" style="width: auto; font-family:'Courier New', Courier, monospace" bindinput="input" />
+</view>
+
+<view style="font-weight: bold;">总人数</view>
+<view class="sum-container">
+    <view style="line-height: 24px; text-align: center;">总人数</view>
+    <view></view>
+    <view style="display: grid;grid-template-columns: auto auto auto;">
+        <view style="text-align: center;" bindtap="change_sum" data-type="delete">
+            <l-icon name="delete" />
+        </view>
+        <view style="text-align: center;">{{sum}}</view>
+        <view style="text-align: center;">
+            <l-icon name="add" bindtap="change_sum" data-type="add" />
+        </view>
+    </view>
+</view>
+
+<view style="background-color: #fd6a61;  margin: 10px;" class="my_button" hover-class="my_button_hover" bindtap="handin" data-des="additem">确定发起</view>

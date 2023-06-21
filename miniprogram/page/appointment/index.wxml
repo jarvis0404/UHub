@@ -1,0 +1,42 @@
+<view class="container">
+
+    <view></view>
+
+    <view class="grid1">
+        <view style="background-color: #61affd; margin: 10px;" hover-class="my-button-hover" class="my-button" bindtap="jump" data-des="joined">我加入的</view>
+        <view style="background-color: #fd6a61;  margin: 10px;" class="my-button" hover-class="my-button-hover" bindtap="jump" data-des="additem">我要发起</view>
+    </view>
+
+    <l-sticky scrollTop="{{scrollTop}}" mode="css">
+        <l-sticky-item l-header-sticky-class="l-header-sticky-class">
+            <view slot="header">
+                <!-- 这是被吸顶的容器 -->
+                <view class="grid">
+                    <view wx:for="{{grids}}">
+                        <view class='{{item.is_selected}}' hover-class="hover" bindtap="select" data-index="{{index}}">{{item.text}}({{item.sum}})</view>
+                    </view>
+                </view>
+            </view>
+
+            <view slot="body" class="view-container">
+
+                <view class="big-box" wx:for="{{datalist}}" bindtap="to_more" data-index="{{index}}" hover-class="hover" wx:if="{{item.is_show}}">
+                        <view class="left-box" >
+                            {{item.theme}}
+                        </view>
+                        <view class="right-box" >
+                            <view class="num-box">{{1 + item.members.length}}/{{item.sum}}人</view>
+                            <view class='text-box'>
+                                <view style="padding: 4px;">{{item.text}}</view>
+                            </view>
+                            <view class='info-box'>
+                                <view style="padding: 4px;">{{item.update_time}}发起</view>
+                            </view>
+                        </view>
+                </view>
+
+            </view>
+        </l-sticky-item>
+    </l-sticky>
+
+</view>

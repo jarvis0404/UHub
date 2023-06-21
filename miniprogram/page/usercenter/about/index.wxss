@@ -1,0 +1,27 @@
+/* page/usercenter/about/index.wxss */
+.l-title-class {
+    padding-left: 0rpx !important;
+    padding-right: 0rpx !important;
+}
+
+.l-body-class {
+    padding-left: 0 !important;
+}
+
+.collapse {
+    margin-top: 200rpx;
+}
+
+.img {
+    width: 500rpx;
+    height: 500rpx;
+    border-radius: 500rpx;
+    position: relative;
+    left: 126rpx;
+    top: 50rpx;
+}
+
+.container {
+    height: 600rpx;
+    position: relative;
+}

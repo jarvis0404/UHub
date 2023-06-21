@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "l-toast": "/dist/toast/index",
+        "l-radio-group": "/dist/radio-group/index",
+        "l-radio": "/dist/radio/index",
+        "l-image-picker": "/dist/image-picker/index",
+        "l-textarea": "/dist/textarea/index"
+    }
+}

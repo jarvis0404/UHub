@@ -1,0 +1,2 @@
+<l-input style="position: relative; left: 0rpx; top: 29rpx" label="个性签名"  placeholder="请输入新的个性签名" bind:lininput='change_motto' />
+<l-button bindtap="motto_change"shape="semicircle"plain="{{true}}"size="medium"  style="position: relative; left: 286rpx; top: 75rpx">保存</l-button>

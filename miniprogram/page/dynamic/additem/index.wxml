@@ -1,33 +1,3 @@
-<!-- 取消昵称和标题 -->
-<!-- <content-card
-      class="content"
-      name="展示的信息"
-    >
-      <view class='buttun-wrapper1'>
-        <l-input
-          value='{{value1}}'
-          width="750"
-          label="昵称"
-          clear="{{true}}"
-          placeholder="请输入昵称"
-          label-width="170"
-          bind:lininput="addnickname"/>
-        <l-input
-          label="内容标题"
-          width="750"
-          label-width="170"
-          placeholder="请输入标题" 
-          bind:lininput="addtitle"/>
-      </view>
-</content-card> -->
-<!-- <view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
-
-取消上传头像
-<content-card
-      class="content"
-      name="上传你的头像"
-    >
-</content-card> -->
 
 <view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
 <content-card class="content" name="在此输入文本">
@@ -39,6 +9,7 @@
 <content-card class="content" name="最多上传9张图片">
     <l-image-picker urls="" bind:linchange='upload_image' count="9" />
 </content-card>
+
 <view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
 
 <button bindtap="confirm">提交</button>

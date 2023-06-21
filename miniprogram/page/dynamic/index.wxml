@@ -3,10 +3,15 @@
     <image src="https://tvax4.sinaimg.cn/large/008tUvTqly1hf3cuux129j305k05kt92.jpg" class="fixed-box-icon" />
 </view>
 
+<content-card name="公告" cardPadding="{{false}}">
+    <l-notice-bar style="margin-bottom:20rpx" type="swip" swip-arr="{{notices}}" front-icon-name="notification"></l-notice-bar>
+</content-card>
+
 <view wx:for="{{datalist}}" wx:key="update_time">
     <l-card type="avatar" l-class="card" image="{{item.avatar}}" title="{{item.nickname}}" describe="{{item.update_time}}">
+
         <!-- 撤回投稿 -->
-        <l-tag shape="circle" bg-color="#f3f3f3" font-color="#EE0000" slot="more" size="large" wx:if="{{item.is_me}}" bindtap="delete_item">撤回投稿</l-tag>
+        <l-tag shape="circle" bg-color="#f3f3f3" font-color="#EE0000" slot="more" size="large" wx:if="{{item.is_me}}" bindtap="delete_item" data-index="{{index}}">撤回投稿</l-tag>
 
         <!-- 文本 -->
         <view class="avter-content" bindtap="newPage" data-index="{{index}}">
@@ -21,28 +26,24 @@
         <!-- 喜欢和评论 -->
         <view class="avter-share-container">
             <!-- 已经点赞 -->
-            <view class="like-container" bindtap="addLike" data-index="{{index}}" wx:if="{{item.liked}}">
+            <view class="like-container" bindtap="addLike" data-index="{{index}}" wx:if="{{item.liked}}" hover-class="hover">
                 <l-icon name="like" color="#FF0000" size="30" />
                 <view class="number">{{item.liked_users.length}}</view>
             </view>
             <!-- 未点赞 -->
-            <view class="like-container" bindtap="addLike" data-index="{{index}}" wx:if="{{!item.liked}}">
+            <view class="like-container" bindtap="addLike" data-index="{{index}}" wx:if="{{!item.liked}}" hover-class="hover">
                 <l-icon name="like" color="#666" size="30" />
                 <view class="number">{{item.liked_users.length}}</view>
             </view>
 
-            <view class="like-container" bindtap="newPage" data-index="{{index}}">
+            <view class="like-container" bindtap="newPage" data-index="{{index}}" hover-class="hover">
                 <l-icon name="comment" color="#666" size="30" />
                 <view class="number">{{item.comments.length}}</view>
             </view>
         </view>
     </l-card>
 </view>
- 
+
 <!-- 底线 -->
-<l-loadmore show="{{true}}" 
-          type="end"
-          size="28" 
-          line="{{true}}"
-          >
+<l-loadmore show="{{true}}" type="end" size="28" line="{{true}}">
 </l-loadmore>

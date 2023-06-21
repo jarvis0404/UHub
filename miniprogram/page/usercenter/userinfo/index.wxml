@@ -1,0 +1,8 @@
+<view class="container" >
+    <l-avatar style="position: relative; left: 22rpx; top: -1rpx" class="avatar" size="160" src="{{account.avatar}}"/>
+    <view wx:if="{{isshow}}" >
+        <l-list l-class="list" icon title=" 生日：{{account.birthday}}    |   家乡：{{account.hometown}}" gap="20" style="position: relative; left: 0rpx; top: 0rpx" l-content-class="l-content-class"></l-list>
+    </view>
+    <text class="nickname"  style="position: relative; left: 221rpx; top: -186rpx">{{account.nickname}}</text>
+    <l-button  type="default" size="large" shape="semicircle" plain="true" style="position: fixed; left: 22rpx; top: 282rpx" bindtap="jumpPage" data-des="infoSetting">设置个人信息</l-button>
+</view>

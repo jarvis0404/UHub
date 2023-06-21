@@ -1,0 +1,16 @@
+<view class="container">
+<image style="position: relative; left: 126rpx; top: 51rpx"   src="https://tvax4.sinaimg.cn/large/008tUvTqgy1hf647t46e5j31jk1jkdtf.jpg" class="img"/>
+</view>
+<l-collapse type="accordion" l-class="collapse">
+  <l-collapse-item title="邮hub是什么"  >
+    <text>邮hub链接每一位北邮人\n
+    做最好的校内互动平台\n
+    全校级的大型朋友圈\n
+    本校内的迷你微博
+    </text>
+  </l-collapse-item>
+  <l-collapse-item title="联系我们" >
+  </l-collapse-item>
+  <l-collapse-item title="商务合作" >
+  </l-collapse-item>
+</l-collapse>

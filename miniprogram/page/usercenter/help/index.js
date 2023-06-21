@@ -1,0 +1,13 @@
+// page/usercenter/help/index.js
+Page({
+
+    /**
+     * 页面的初始数据
+     */
+    data: {
+
+    },
+    changeTabs(e){
+        
+    }
+})

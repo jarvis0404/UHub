@@ -1,54 +1,81 @@
 {
     "pages": [
-      "page/home/index",
-      "page/home/hobby/index",
-      "page/home/sports/index",
-      "page/home/confess/index",
-      "page/home/weather/index",
-      "page/home/todo/index",
-      "page/dynamic/index",
-      "page/dynamic/newPage/index",
-      "page/dynamic/additem/index",
-      "page/usercenter/index",
-      "page/usercenter/login/index",
-      "page/usercenter/register/index"
+        "page/home/index",
+        "page/home/weather/index",
+        "page/home/todo/index",
+        "page/dynamic/index",
+        "page/dynamic/newPage/index",
+        "page/dynamic/additem/index",
+        "page/appointment/index",
+        "page/appointment/more/index",
+        "page/appointment/additem/index",
+        "page/appointment/joined/index",
+        "page/usercenter/index",
+        "page/usercenter/login/index",
+        "page/usercenter/register/index",
+        "page/usercenter/about/index",
+        "page/usercenter/share/index",
+        "page/usercenter/help/index",
+        "page/usercenter/order/index",
+        "page/usercenter/userinfo/index",
+        "page/usercenter/userinfo/infoSetting/index",
+        "page/usercenter/userinfo/infoSetting/nickname/index",
+        "page/usercenter/userinfo/infoSetting/motto/index",
+        "page/usercenter/userinfo/infoSetting/others/index",
+        "page/usercenter/response/index",
+        "page/usercenter/response/suggestion/index",
+        "page/usercenter/response/error/index"
     ],
     "tabBar": {
-      "color": "#000000",
-      "selectedColor": "#000000",
-      "backgroundColor": "#ffffff",
-      "list": [
-        {
-          "pagePath": "page/home/index",
-          "text": "首页",
-          "iconPath": "./images/home2.png",
-          "selectedIconPath": "./images/home.png"
-        },
-        {
-          "pagePath": "page/dynamic/index",
-          "text": "动态",
-          "selectedIconPath": "./images/dynamic.png",
-          "iconPath": "./images/dynamic2.png"
-        },
-        {
-          "pagePath": "page/usercenter/index",
-          "text": "个人中心",
-          "selectedIconPath": "./images/login.png",
-          "iconPath": "./images/login2.png"
-        }
-      ]
+        "color": "#000000",
+        "selectedColor": "#000000",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "page/home/index",
+                "text": "首页",
+                "iconPath": "./images/home2.png",
+                "selectedIconPath": "./images/home.png"
+            },
+            {
+                "pagePath": "page/dynamic/index",
+                "text": "动态",
+                "selectedIconPath": "./images/dynamic.png",
+                "iconPath": "./images/dynamic2.png"
+            },
+            {
+                "pagePath": "page/appointment/index",
+                "text": "攒局",
+                "selectedIconPath": "./images/zanju.png",
+                "iconPath": "./images/zanju2.png"
+            },
+            {
+                "pagePath": "page/usercenter/index",
+                "text": "个人中心",
+                "selectedIconPath": "./images/login.png",
+                "iconPath": "./images/login2.png"
+            }
+        ]
     },
     "window": {
-      "backgroundColor": "#F6F6F6",
-      "backgroundTextStyle": "light",
-      "navigationBarBackgroundColor": "#F6F6F6",
-      "navigationBarTitleText": "导论大作业",
-      "navigationBarTextStyle": "black"
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+
+        "navigationBarTextStyle": "black"
     },
     "sitemapLocation": "sitemap.json",
     "style": "v2",
     "usingComponents": {
-      "content-title": "./components/content-title/index",
-      "content-card": "./components/content-card/index"
-    }
+        "content-title": "./components/content-title/index",
+        "content-card": "./components/content-card/index"
+    },
+    "requiredPrivateInfos": [
+        "getLocation"
+    ],
+    "permission": {
+        "scope.userLocation": {
+          "desc": "你的位置信息将用于小程序获取天气情况"
+        }
+      }
 }

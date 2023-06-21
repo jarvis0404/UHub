@@ -1,0 +1,29 @@
+/* page/usercenter/userinfo/index.wxss */
+.container {
+    height: 400rpx;
+    background-color: #71c0e9;
+}
+.nickname {
+    position: relative; 
+    left: 80rpx; 
+    top: -44rpx; 
+    color: whitesmoke;
+    size: 20rpx;
+}
+.avatar {
+    position: relative;
+    left: 20rpx;
+    top: 5rpx;
+}
+.list {
+    height: 50rpx;
+    margin-bottom: auto !important;
+    border-bottom-color: #71c0e9 !important;
+}
+.l-title-class {
+    padding-left: 0rpx !important;
+    padding-right: 0rpx !important;
+}
+.l-content-class{
+    color: whitesmoke;
+}

@@ -1,0 +1,32 @@
+<content-card
+      class="content"
+      name="请选择反馈内容">
+    <view>
+        <l-radio-group l-class="l-radio-group" length="6" bind:linchange="onChange">
+            <l-radio l-class="l-radio" 
+            wx:for="{{items}}" 
+            wx:key="id" 
+            key="{{item.id}}"
+            placement="left">
+            {{item.name}}
+            </l-radio>
+        </l-radio-group>
+    </view>
+</content-card>
+<content-card
+      class="content"
+      name="问题简述"
+    >
+      <view >
+        <l-textarea  placeholder="请说说您所遇到的问题" bind:lininput='discription'/>
+      </view>
+    </content-card>
+<view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
+<content-card
+      class="content"
+      name="请上传你的截图"
+    >
+    <l-image-picker bind:linchange='upload_screenshot'  count="1"/>
+</content-card>
+<view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
+<button bindtap="upload">上传</button>

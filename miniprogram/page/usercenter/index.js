@@ -1,6 +1,8 @@
 Page({
   data: {
     account: '',
+    isshow:'true',
+    currentKey: 1,
   },
   jumpPage(e) {
     console.log(e.currentTarget.dataset)
@@ -14,23 +16,14 @@ Page({
         url: '/page/usercenter/register/index'
     })
   },
-  onshow() {
-    wx.cloud.callFunction({
-        name: 'get',
-        data: {
-            des_collection: 'users',
-            key: this.data.account,
-        },
-        success: (res) => {
-            console.log(res);
+  onShow:function() {
+    var account = wx.getStorageSync('account')
+    if(account){
+      this.setData({
+        account:account,
+        isshow:false
+      })
+    }
 
-            wx.showToast({
-            title: '读取云数据成功',
-            })
-        },
-        fail: (err) => {
-            console.log(err)
-        }
-     })
-  }
+  },
 })

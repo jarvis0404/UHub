@@ -27,7 +27,7 @@ Page({
     },
     handin: function () {
         var pagedata = wx.getStorageSync('dynamic')
-        var time = new Date().toJSON().substring(0, 10) + ' ' + new Date().toTimeString().substring(0, 8);
+        var time = new Date().toJSON().substring(0, 10) + ' ' + new Date().toTimeString().substring(0, 5);
 
         var account = wx.getStorageSync('account')
         // console.log('lqh: account info:', account)

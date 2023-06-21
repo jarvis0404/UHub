@@ -9,8 +9,8 @@
 .hand-in-item {
     height: 30px;
     width: 30px;
-    cursor: pointer;
-    transition: .2s;
+    /* cursor: pointer; */
+    /* transition: .2s; */
 }
 
 /* 喜欢和评论css */

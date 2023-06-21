@@ -1,6 +1,11 @@
 {
   "usingComponents": {
-
+    "l-avatar":"../../dist/avatar/index",
+    "l-list":"../../dist/list/index",
+    "content-card": "/components/content-card/index",
+    "l-radio-group": "/dist/radio-group/index",
+    "l-radio": "/dist/radio/index"
   },
-  "navigationBarTitleText": "用户中心"
+  "navigationBarTitleText": "用户中心",
+  "navigationBarBackgroundColor": "#fdd28e"
 }

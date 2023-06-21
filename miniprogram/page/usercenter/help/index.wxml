@@ -1,0 +1,13 @@
+<content-card l-content="content" name="新手帮助">
+      <l-tabs l-class-header-line="header-line" scrollable>
+        <l-tabpanel tab="首页" key="1" slot="1">
+          <view class="tab-content">首页</view>
+        </l-tabpanel>
+        <l-tabpanel tab="消息" key="2" slot="2">
+          <view class="tab-content">消息</view>
+        </l-tabpanel>
+        <l-tabpanel tab="个人界面" key="3" slot="3">
+          <view class="tab-content">个人界面</view>
+        </l-tabpanel>
+      </l-tabs>
+</content-card>

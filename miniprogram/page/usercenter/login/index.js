@@ -1,26 +1,10 @@
 Page({
     data: {
         account: '',
-        password: ''
+        password: '',
+
     },
     login(e) {
-        console.log(this.data.account)
-        // wx.cloud.callFunction({
-        //     name: 'get',
-        //     data: {
-        //         account: this.data.account,
-        //         des_collection: 'users'
-        //     },
-        //     success: (res) => {
-        //         wx.showToast({
-        //          title: '读取云数据成功',
-        //         })
-        //         console.log(res)
-        //     },
-        //     fail: (err) => {
-        //         console.log(err)
-        //     }
-        //  })
         wx.cloud.callFunction({
             name: 'get',
             data: {
@@ -39,14 +23,14 @@ Page({
                 else if (this.data.password == res.result.get.data[0].password)
                 {
                     wx.setStorageSync('account', res.result.get.data[0])
-
-                    wx.showToast({
-                        title: '登录成功',
-                        icon: 'success'
-                    })
-
                     wx.navigateBack({
-                        delta: 1
+                      delta:1,
+                      success:result=>{
+                        wx.showToast({
+                          title: '登录成功',
+                          icon: 'success'
+                        })
+                      }
                     })
                 }
                 else {
@@ -62,13 +46,11 @@ Page({
          })
     },
     add_account(e) {
-        console.log(e.detail.value)
         this.setData({
             account: e.detail.value
         })
     },
     add_password(e) {
-        console.log(e.detail.value)
         this.setData({
             password: e.detail.value
         })

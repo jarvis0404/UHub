@@ -32,11 +32,11 @@
 <content-card class="content" name="来发表友善的评论吧~">
     <view class='buttun-wrapper'>
         <l-textarea auto-height="{{true}}" placeholder="{{comment}}" bind:lininput="change_content" auto-height="{{true}}" maxlength="200" border="{{false}}" />
-        <view class="hand-in">
-            <view style="height: 30px; line-height: 30px;" bindtap="handin" class="hand-in-item">
+        <view class="hand-in" hover-class="hover">
+            <view style="height: 30px; line-height: 30px;" bindtap="handin" class="hand-in-item" hover-class="hover">
                 发表
             </view>
-            <image src="https://tvax3.sinaimg.cn/large/008tUvTqly1hf3akqwek0j305k05k0ss.jpg" bindtap="handin" class="hand-in-item" />
+            <image src="https://tvax3.sinaimg.cn/large/008tUvTqly1hf3akqwek0j305k05k0ss.jpg" bindtap="handin" class="hand-in-item" hover-class="hover"/>
         </view>
     </view>
 </content-card>

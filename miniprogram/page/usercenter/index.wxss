@@ -1,0 +1,21 @@
+page {
+    background-image: url('https://tvax1.sinaimg.cn/large/008tUvTqly1hf61r54zmij311o29igrg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+}
+
+.list {
+    margin-bottom: auto !important;
+    border-bottom: solid !important;
+    border-bottom-color: rgb(226, 225, 225) !important;
+}
+
+.container {
+    height: 200rpx;
+    background-color: #fdd28e;
+}
+
+.lists {
+    margin: 10rpx;
+}

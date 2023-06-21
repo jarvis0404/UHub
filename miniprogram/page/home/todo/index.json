@@ -1,6 +1,5 @@
 {
-  "usingComponents": {
-    
-  },
-  "navigationBarTitleText": "ToDo"
+    "usingComponents": {},
+    "navigationBarTitleText": "ToDo",
+    "navigationBarBackgroundColor": "#1169b1"
 }

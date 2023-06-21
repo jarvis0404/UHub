@@ -1,71 +1,29 @@
-<content-card
-      class="content"
-      name="设置账号密码"
-    >
-      <view class='buttun-wrapper'>
-        <l-input
-          placeholder="请输入账号"
-          width="750"
-          show-row="{{ false }}"
-          width="600"
-          l-class='input-phone'
-          label-width="120"
-          clear="{{true}}"
-          bind:lininput="add_account"
-        >
-        <l-icon class='input-icon' slot="left" name="user"/>
+<content-card class="content" name="设置账号密码">
+    <view class='buttun-wrapper'>
+        <l-input placeholder="请输入账号" width="750" show-row="{{ false }}" width="600" l-class='input-phone' label-width="120" clear="{{true}}" bind:lininput="add_account">
+            <l-icon class='input-icon' slot="left" name="user" />
         </l-input>
-      </view>
+    </view>
 
-      <view class='buttun-wrapper'>
-        <l-input
-          placeholder="请输入密码"
-          width="750"
-          show-row="{{ false }}"
-          width="600"
-          l-class='input-phone'
-          label-width="120"
-          clear="{{true}}"
-          bind:lininput="add_password"
-        >
-        <l-icon class='input-icon' slot="left" name="password"/>
+    <view class='buttun-wrapper'>
+        <l-input placeholder="请输入密码" width="750" show-row="{{ false }}" width="600" l-class='input-phone' label-width="120" clear="{{true}}" bind:lininput="add_password">
+            <l-icon class='input-icon' slot="left" name="password" />
         </l-input>
-      </view>
+    </view>
 </content-card>
 
-<content-card
-      class="content"
-      name="设置昵称、个性签名"
-    >
-      <view class='buttun-wrapper'>
-        <l-input
-          placeholder="请输入昵称"
-          width="750"
-          show-row="{{ false }}"
-          width="600"
-          l-class='input-phone'
-          label-width="120"
-          clear="{{true}}"
-          bind:lininput="add_nickname"
-        >
-        <l-icon class='input-icon' slot="left" name="user"/>
+<content-card class="content" name="设置昵称、个性签名">
+    <view class='buttun-wrapper'>
+        <l-input placeholder="请输入昵称" width="750" show-row="{{ false }}" width="600" l-class='input-phone' label-width="120" clear="{{true}}" bind:lininput="add_nickname">
+            <l-icon class='input-icon' slot="left" name="user" />
         </l-input>
-      </view>
+    </view>
 
-      <view class='buttun-wrapper'>
-        <l-input
-          placeholder="请输入个性签名"
-          width="750"
-          show-row="{{ false }}"
-          width="600"
-          l-class='input-phone'
-          label-width="120"
-          clear="{{true}}"
-          bind:lininput="add_motto"
-        >
-        <l-icon class='input-icon' slot="left" name="favor"/>
+    <view class='buttun-wrapper'>
+        <l-input placeholder="请输入个性签名" width="750" show-row="{{ false }}" width="600" l-class='input-phone' label-width="120" clear="{{true}}" bind:lininput="add_motto">
+            <l-icon class='input-icon' slot="left" name="favor" />
         </l-input>
-      </view>
+    </view>
 </content-card>
 <!-- <view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
 <content-card
@@ -73,13 +31,18 @@
       name="上传你的头像"
     >
 </content-card> -->
-<view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
-<content-card
-      class="content"
-      name="上传你的头像"
-    >
-    <l-image-picker urls="" bind:linchange='upload_avatar' count="1"/>
-</content-card>
-<view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
+<view class='container'>
+    <l-image-clipper show="{{currentConfig.show}}" image-url="{{currentConfig.imageUrl}}" z-index="{{currentConfig.zIndex}}" type="{{currentConfig.type}}" quality="{{currentConfig.quality}}" width="{{currentConfig.width}}" height="{{currentConfig.height}}" max-height="{{currentConfig.maxHeight}}" max-width="{{currentConfig.maxWidth}}" min-width="{{currentConfig.minWidth}}" min-height="{{currentConfig.minHeight}}" lock-width="{{currentConfig.lockWidth}}" lock-height="{{currentConfig.lockHeight}}" lock-ratio="{{currentConfig.lockRatio}}" scale-ratio="{{currentConfig.scaleRatio}}" min-ratio="{{currentConfig.minRatio}}" max-ratio="{{currentConfig.maxRatio}}" disable-scale="{{currentConfig.disableScale}}" disable-rotate="{{currentConfig.disableRotate}}" limit-move="{{currentConfig.limitMove}}" check-image="{{currentConfig.checkImage}}" check-image-icon="{{currentConfig.checkImageIcon}}" rotate-along="{{currentConfig.rotateAlong}}" rotate-along-icon="{{currentConfig.rotateAlongIcon}}" rotate-inverse="{{currentConfig.rotateInverse}}" rotate-inverse-icon="{{currentConfig.rotateInverseIcon}}" sure="{{currentConfig.sure}}" sure-icon="{{currentConfig.sureIcon}}" close="{{currentConfig.close}}" close-icon="{{currentConfig.closeIcon}}" bindlinclip="linclip">
+        <l-image-clipper-tools z-index="{{toolsConfig.zIndex}}" rotate-angle="{{toolsConfig.rotateAngle}}" lock-width="{{toolsConfig.lockWidth}}" lock-height="{{toolsConfig.lockHeight}}" lock-ratio="{{toolsConfig.lockRatio}}" disable-scale="{{toolsConfig.disableScale}}" disable-rotate="{{toolsConfig.disableRotate}}" limit-move="{{toolsConfig.limitMove}}"></l-image-clipper-tools>
+    </l-image-clipper>
 
+        <content-card l-content="content" name="上传你的头像" wx:for="{{clipperNaviConfigs}}" wx:for-item="item" wx:key="index">
+            <l-button bind:lintap="upload" size="large" data-index="{{index}}" wx:if="{{item.type === 1}}">选择图片</l-button>
+            <view class="image-wrapper">
+                <image src="{{item.config.resultImageUrl}}" wx:if="{{item.config.resultImageUrl}}" mode="widthFix"></image>
+            </view>
+        </content-card>
+</view>
+<view style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:2rpx;"></view>
 <button bindtap="register">注册</button>
+
